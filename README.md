@@ -1,5 +1,7 @@
 # Nuxt Minimal Starter
 
+TODO: Change this file.
+
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
