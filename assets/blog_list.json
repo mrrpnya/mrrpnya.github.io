@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "metadata": {
+    "title": "Awesome",    "description": "A curated list of awesome stuff I like",    "date": "2024-11-26",    "tags": ["awesome", "curated"]
+      },
+      "id": "awesome",
+      "url": "/blog/awesome.md"
+    },
+    {
+      "metadata": {
+    "title": "Badges!",    "description": "A collection of 88x31 badges for various things",    "date": "2024-12-21",    "tags": ["badges", "retro", "web"]
+      },
+      "id": "badges",
+      "url": "/blog/badges.md"
+    }
+  ]
+}

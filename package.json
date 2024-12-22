@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json && nuxt build",
+    "dev": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json && nuxt dev",
+    "generate": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json && nuxt generate",
+    "preview": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json &&nuxt preview",
+    "postinstall": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json &&nuxt prepare"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@tsparticles/slim": "^3.7.1",
+    "nuxt": "^3.14.1592",
+    "tsparticles": "^3.7.1",
+    "vue": "latest",
+    "vue-router": "latest",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/vue3": "^3.0.1",
+    "front-matter": "^4.0.2",
+    "highlight.js": "^11.10.0",
+    "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "nuxt-particles": "^0.3.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
