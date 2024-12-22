@@ -7,17 +7,18 @@ const onLoad = (container: Container) => {
 </script>
 
 <template>
+    <div>
     <NuxtParticles
-            class="fixed w-full h-full"
+            class="w-full h-full z-0"
             id="tsparticles"
             @load="onLoad"
             :particlesInit="particlesInit"
             :options="{
                     fullScreen: {
                         enable: true,
-                        zIndex: -1
+                        zIndex: -10
                     },
-                    fpsLimit: 60,
+                    fpsLimit: 40,
                     interactivity: {
                         detect_on: 'window',
                         events: {
@@ -34,7 +35,7 @@ const onLoad = (container: Container) => {
                         }
                     },
                     particles: {
-                        zIndex: -10,
+                        zIndex: 0,
                         color: {
                             value: '#A020F0'
                         },
@@ -74,4 +75,5 @@ const onLoad = (container: Container) => {
         >
     </NuxtParticles>
     <slot></slot>
+</div>
 </template>

@@ -31,5 +31,5 @@ watch(() => props.text, (newVal) => {
     <div v-if="loading" class="text-center animate-pulse">
         <h2>Loading...</h2>
     </div>
-    <div v-html="text"></div>
+    <div class="md-contents" v-html="text"></div>
 </template>

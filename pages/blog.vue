@@ -162,7 +162,7 @@ watch(url, async () => {
                         </div>
                         <div
                             class="text-pretty min-w-96 text-left max-w-4xl mt-4 p-6 max-md:w-screen rounded-md container bg-opacity-90 bg-purple-950">
-                            <div v-html="text"></div>
+                            <div class="md-contents" v-html="text"></div>
                         </div>
                     </div>
                 </Transition>

@@ -1,12 +1,8 @@
-# Helau! :3
+<h1 class="md-override">Helau! :3</h1>
 
 ## 🌙 Luna - She/Her
 
-<a href="mailto: thelunacy@proton.me">`thelunacy@proton.me`</a>
-
-###### This is a specific email for contact.
-
-<br>
+[`thelunacy@proton.me`](mailto:thelunacy@proton.me)
 
 ###### 🏳️‍⚧️ I am exploring identity, so this may change or I might go by different things elsewhere.
 
@@ -15,6 +11,7 @@
 <div style="color: pink">
 
 *Queer rights are human rights.*
+
 </div>
 
 ---

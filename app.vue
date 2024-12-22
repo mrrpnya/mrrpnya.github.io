@@ -12,6 +12,7 @@ import './assets/style.css'
         name: 'page',
         mode: 'out-in'
       }" />
+  <div></div>
   <background-calm />
 </template>
 

@@ -15,6 +15,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Lobster', cursive, 'Courier New', Courier, monospace;
     @apply text-2xl font-bold;
 }
 
@@ -35,7 +36,7 @@ h6 {
 }
 
 a {
-    @apply transition text-purple-400 hover:text-purple-500;
+    @apply transition text-purple-400 hover:text-purple-600;
 }
 
 
@@ -80,6 +81,19 @@ code {
 /* Code if there is no pre tag before it */
 :not(pre) > code {
     @apply p-1 border-purple-800 border rounded-lg;
+}
+
+/* Markdown improvements to headers when a descendent of class="md-contents" */
+/* h1 to h2; Add a border to the bottom of the header */
+.md-contents h1:not(.md-override) {
+    @apply border-b-4 border-purple-600 mb-3;
+}
+.md-contents h2:not(.md-override) {
+    @apply border-b border-purple-600 mb-3;
+}
+
+.md-contents div:not(.md-override) {
+    @apply mb-3 mt-3;
 }
 
 /* Code theme */
