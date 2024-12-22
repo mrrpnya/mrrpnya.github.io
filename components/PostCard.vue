@@ -6,11 +6,6 @@ const props = defineProps({
     url: String,
 });
 
-import { useSlots } from 'vue';
-
-const slots = useSlots();
-
-
 const url = ref(props.url)
 url.value = props.url
 const loading = ref(false)
@@ -52,11 +47,10 @@ async function fetchData() {
 </script>
 
 <template>
-    <a :href="'/blog?post=' +url">
-    <div class="m-4 p-3 min-h-10 w-90 text-white rounded-2xl border-2 border-purple-300 transition hover:bg-purple-600 bg-purple-700 bg-opacity-50 hover:bg-opacity-70" 
+    <NuxtLink :href="'/blog?post=' +url">
+    <div class="m-4 p-3 min-h-30 w-90 text-white rounded-2xl border-2 border-purple-300 transition hover:bg-purple-600 bg-purple-700 bg-opacity-50 hover:bg-opacity-70" 
         :style="{ backgroundImage: `url(${background})` }">
         <div v-if="loading" class="text-center animate-pulse">
-            <h2>Loading...</h2>
         </div>
         <div v-else-if="error" class="text-center">
             <h2>Error: {{ error }}</h2>
@@ -76,5 +70,5 @@ async function fetchData() {
             <p>{{ description }}</p>
         </div>
     </div>
-    </a>
+    </NuxtLink>
 </template>

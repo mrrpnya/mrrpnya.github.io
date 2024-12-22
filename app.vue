@@ -7,11 +7,28 @@ import './assets/style.css'
 </script>
 
 <template>
-  <div>
-    <Navbar/>
-    <NuxtLayout>
-      <NuxtPage/>
-    </NuxtLayout>
-    <background-calm />
-  </div>
+  <Navbar/>
+  <NuxtPage :transition="{
+        name: 'page',
+        mode: 'out-in'
+      }" />
+  <background-calm />
 </template>
+
+<style>
+.page-move,
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translate(100px, 0);
+}
+
+.page-leave-active {
+  position: absolute;
+}
+</style>
