@@ -11,7 +11,7 @@
                 <NuxtLink href="/blog/?post=/blog/badges.md" class="transition text-xl pl-2 pr-2 ease-in-out text-purple-100 hover:text-purple-400 duration-200">Badges</NuxtLink>
             </div>
             <div class="flex justify-center">
-                <small class=" ml-3 mr-3">Hosted with <NuxtLink href="https://github.com/misslunatic/misslunatic.github.io" class="text-blue-500">GitHub Pages</NuxtLink></small>
+                <small class=" ml-3 mr-3">Hosted with <NuxtLink href="https://github.com/TheFelidae/thefelidae.github.io" class="text-blue-500">GitHub Pages</NuxtLink></small>
             </div>
         </div>
     </div>
