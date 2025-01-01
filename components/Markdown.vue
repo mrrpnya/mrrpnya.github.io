@@ -2,8 +2,6 @@
 import configured_markdown from '~/assets/markdown_conf';
 import { useSlots } from 'vue';
 
-let markdown = configured_markdown();
-
 const text = ref("");
 const loading = ref(true);
 
@@ -17,7 +15,7 @@ function render_markdown(data: string | undefined) {
         loading.value = false;
         return;
     }
-    text.value = markdown.render(data);
+    text.value = configured_markdown().render(data);
     loading.value = false
 }
 
@@ -44,6 +42,141 @@ watch(() => props.text, (newVal) => {
     padding-bottom: 0.25rem;
     margin-bottom: 0.5rem;
 }
+
+/* Markdown alerts get a box, a shadow, and a background+border color */
+.md-contents .markdown-alert:not(.md-override) {
+    border: 1px solid #A020F0;
+    background-color: #333;
+    box-shadow: 0 0 7px #A020F0;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+.md-contents .markdown-alert-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.md-contents .markdown-alert-warning:not(.md-override) {
+    border: 1px solid #FFA500;
+    background-color: #aa6600;
+    box-shadow: 0 0 7px #FFA500;
+}
+
+.md-contents .markdown-alert-warning .markdown-alert-title:not(.md-override):before {
+    content: "⚠️ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-danger:not(.md-override) {
+    border: 1px solid #FF0000;
+    background-color: #aa0000;
+    box-shadow: 0 0 7px #FF0000;
+}
+.md-contents .markdown-alert-danger .markdown-alert-title:not(.md-override):before {
+    content: "❌ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-success:not(.md-override) {
+    border: 1px solid #00FF00;
+    box-shadow: 0 0 7px #00FF00;
+}
+.md-contents .markdown-alert-success .markdown-alert-title:not(.md-override):before {
+    content: "✅ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-info:not(.md-override) {
+    border: 1px solid #00FFFF;
+    box-shadow: 0 0 7px #00FFFF;
+}
+.md-contents .markdown-alert-info .markdown-alert-title:not(.md-override):before {
+    content: "ℹ️ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-important:not(.md-override) {
+    border: 1px solid #FF00FF;
+    box-shadow: 0 0 7px #FF00FF;
+}
+.md-contents .markdown-alert-important .markdown-alert-title:not(.md-override):before {
+    content: "❗ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-caution:not(.md-override) {
+    border: 1px solid #FFFF00;
+    box-shadow: 0 0 7px #FFFF00;
+}
+.md-contents .markdown-alert-caution .markdown-alert-title:not(.md-override):before {
+    content: "⚠️ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-note:not(.md-override) {
+    border: 1px solid #0000FF;
+    box-shadow: 0 0 7px #0000FF;
+}
+.md-contents .markdown-alert-note .markdown-alert-title:not(.md-override):before {
+    content: "📝 ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-tip:not(.md-override) {
+    border: 1px solid #00FF00;
+    box-shadow: 0 0 7px #00FF00;
+}
+.md-contents .markdown-alert-tip .markdown-alert-title:not(.md-override):before {
+    content: "💡 ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-question:not(.md-override) {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 7px #ccc;
+}
+.md-contents .markdown-alert-question .markdown-alert-title:not(.md-override):before {
+    content: "❓ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-quote:not(.md-override) {
+    border: 1px dashed #ccc;
+    box-shadow: 0 0 7px #ccc;
+}
+.md-contents .markdown-alert-quote .markdown-alert-title:not(.md-override):before {
+    content: "❝ ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-deprecated:not(.md-override) {
+    border: 1px solid indigo;
+    box-shadow: 0 0 7px indigo;
+}
+.md-contents .markdown-alert-deprecated .markdown-alert-title:not(.md-override):before {
+    content: "🚫 ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-example:not(.md-override) {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 7px #ccc;
+}
+.md-contents .markdown-alert-example .markdown-alert-title:not(.md-override):before {
+    content: "💡 ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-todo:not(.md-override) {
+    border: 1px solid skyblue;
+    box-shadow: 0 0 7px skyblue;
+}
+.md-contents .markdown-alert-todo .markdown-alert-title:not(.md-override):before {
+    content: "📝 ";
+    text-shadow: 1px 1px 1px #000;
+}
+.md-contents .markdown-alert-done:not(.md-override) {
+    border: 1px solid #00FF00;
+    box-shadow: 0 0 7px #00FF00;
+}
+.md-contents .markdown-alert-done .markdown-alert-title:not(.md-override):before {
+    content: "✅ ";
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* Footnotes, ensure they are by default white with no transition if they have no href */
+.md-contents .footnote-anchor:not([href]) {
+    color: white;
+    transition: none;
+}
+
 
 /* Apply margin to code blocks */
 .md-contents pre:not(.md-override) {
@@ -97,6 +230,75 @@ watch(() => props.text, (newVal) => {
 /* transition for button hover effect */
 .md-contents button:not(.md-override) {
     transition: background-color 0.5s;
+}
+
+/* iframes get a border and a shadow */
+.md-contents iframe:not(.md-override) {
+    @apply border-2 border-purple-600 rounded-lg;
+    box-shadow: 0 0 7px #A020F0;
+}
+
+/* Identify if the iframe links to a YouTube video - If so, red border */
+.md-contents iframe[src*="youtube.com"]:not(.md-override) {
+    @apply border-2 border-red-600;
+    box-shadow: 0 0 7px red;
+}
+
+/* Identify if the iframe links to a Twitch video - If so, purple border */
+.md-contents iframe[src*="twitch.tv"]:not(.md-override) {
+    @apply border-2 border-purple-600;
+    box-shadow: 0 0 7px #A020F0;
+}
+
+/* Identify if the iframe links to a Spotify playlist - If so, green border */
+.md-contents iframe[src*="spotify.com"]:not(.md-override) {
+    @apply border-2 border-green-600 rounded-xl;
+    box-shadow: 0 0 7px green;
+}
+
+/* Identify if the iframe links to a SoundCloud track - If so, orange border */
+.md-contents iframe[src*="soundcloud.com"]:not(.md-override) {
+    @apply border-2 border-orange-600;
+    box-shadow: 0 0 7px orange;
+}
+
+/* Identify if the iframe links to a Bandcamp track - If so, blue border */
+.md-contents iframe[src*="bandcamp.com"]:not(.md-override) {
+    @apply border-2 border-blue-600;
+    box-shadow: 0 0 7px blue;
+}
+
+/* Identify if the iframe links to a GitHub Gist - If so, gray border */
+.md-contents iframe[src*="gist.github.com"]:not(.md-override) {
+    @apply border-2 border-gray-600;
+    box-shadow: 0 0 7px gray;
+}
+
+/* And if it links to Wikipedia, the free online encyclopedia, give it a white border */
+.md-contents iframe[src*="wikipedia.org"]:not(.md-override) {
+    @apply border-2 border-white;
+    box-shadow: 0 0 7px white;
+}
+
+/* If the iframe links to a Google Maps location */
+.md-contents iframe[src*="google.com/maps"]:not(.md-override) {
+    border-left: 2px solid #4285F4;
+    border-right: 2px solid #0F9D58;
+    border-top: 2px solid #F4B400;
+    border-bottom: 2px solid #DB4437;
+    box-shadow: 0 0 7px #4285F4;
+}
+
+/* Redo the audio element styling */
+.md-contents audio:not(.md-override) {
+    @apply border-2 border-purple-600 rounded-lg;
+    box-shadow: 0 0 7px #A020F0;
+}
+
+/* Images get a border and a shadow */
+.md-contents img:not(.md-override) {
+    @apply border-2 border-purple-600;
+    box-shadow: 0 0 7px #A020F0;
 }
 
 </style>

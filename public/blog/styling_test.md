@@ -105,7 +105,15 @@ fn main() {
 
 This is a sentence with a footnote[^1].
 
-[^1]: This is the footnote.
+### Superscript and Subscript
+
+This is a superscript: x<sup>2</sup>.
+
+This is a subscript: H<sub>2</sub>O.
+
+### Marker
+
+This is a highlight: ==highlighted text==.
 
 ### Math
 
@@ -124,18 +132,74 @@ $$
 - [x] Checked
 - [ ] Unchecked
 
-### Videos
+### Alerts
+
+> [!warning]
+> This is a warning alert.
+
+> [!info]
+> This is an info alert.
+
+> [!danger]
+> This is a danger alert.
+
+> [!success]
+> This is a success alert.
+
+> [!important]
+> This is an important alert.
+
+> [!caution]
+> This is a caution alert.
+
+> [!note]
+> This is a note alert.
+
+> [!tip]
+> This is a tip alert.
+
+> [!question]
+> This is a question alert.
+
+> [!quote]
+> This is a quote alert.
+
+> [!deprecated]
+> This is a deprecated alert.
+
+> [!example]
+> This is an example alert.
+
+> [!todo]
+> This is a todo alert.
+
+> [!done]
+> This is a done alert.
+
+### Iframes
 
 <!-- The towwwn inside meeeeee :3 -->
 
+The colorations are supposed to automagically change based on what you're linking to.
+
+YouTube:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/69VV0pH57XE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Spotify:
+
+<iframe src="https://open.spotify.com/embed/track/0R4EcD2e5m9wsMmWVVbBOc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+Maps:
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0000000000005!2d-122.0841926846827!3d37.42199997981999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3f0b0b0f7d%3A0x7d9b1f7f7f7f7f7f!2sGoogleplex!5e0!3m2!1sen!2sus!4v1630483660004!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 ### Audio
 
-<!-- Bach's Prelude and Fugue in A minor -->
+Bach's Prelude and Fugue in A minor:
 
 <audio controls>
-  <source src="https://en.wikipedia.org/wiki/File:BWV_543-prelude.ogg" type="audio/ogg">
+  <source src="/files/BWV_543-prelude.ogg" type="audio/ogg">
   Your browser does not support the audio element.
 </audio>
 
@@ -159,9 +223,12 @@ $$
     - [Horizontal Rules](#horizontal-rules)
     - [Emphasis](#emphasis)
     - [Footnotes](#footnotes)
+    - [Superscript and Subscript](#superscript-and-subscript)
+    - [Marker](#marker)
     - [Math](#math)
     - [Checkboxes](#checkboxes)
-    - [Videos](#videos)
+    - [Alerts](#alerts)
+    - [Iframes](#iframes)
     - [Audio](#audio)
     - [Tables of Contents](#tables-of-contents)
     - [Embedded CSS](#embedded-css)
@@ -209,10 +276,11 @@ $$
 
 ### Embedded LaTeX
 
+Euler’s identity $e^{i\pi}+1=0$ is a beautiful formula in $\mathbb{R}^2$.
+
 $$
-
-\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
-
+\frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right)
+= \left(\frac {y^{\omega}} {\omega}\right) \left\{(\log y)^r + \sum_{i=1}^r \frac {(-1)^ Ir \cdots (r-i+1) (\log y)^{ri}} {\omega^i} \right\}
 $$
 
 ### Interactive Scripting
@@ -241,3 +309,5 @@ And this one uses a `<script>` tag to do the same thing:
 This is the end of the test post. I hope everything looks good! 
 
 - TheFelidae
+
+[^1]: This is the footnote.
