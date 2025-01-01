@@ -39,6 +39,8 @@ const title = ref(null);
 const description = ref(null);
 const date = ref(null);
 const tags = ref(null);
+const previous = ref(null);
+const next = ref(null);
 
 // watch the params of the route to fetch the data again
 
@@ -62,8 +64,17 @@ async function fetchData(url) {
         background.value = processed.attributes.background
         title.value = processed.attributes.title
         description.value = processed.attributes.description
-        date.value = processed.attributes.date
+        date.value = processed.attributes.date.toLocaleDateString()
         tags.value = processed.attributes.tags
+
+        if (processed.attributes.previous)
+            previous.value = "/blog/?post=/blog/" + processed.attributes.previous
+        else
+            previous.value = null
+        if (processed.attributes.next)
+            next.value = "/blog/?post=/blog/" + processed.attributes.next
+        else 
+            next.value = null
     } catch (err) {
         error.value = err.toString()
         console.error(err)
@@ -111,8 +122,14 @@ async function fetchList() {
     // Extract the tags
     tagList.value = blog_list.posts.flatMap(post => post.metadata.tags).filter((tag, index, self) => self.indexOf(tag) === index)
 
+    // Sort the posts by date, most recent first
+    list.value.sort((a, b) => new Date(b.metadata.date) - new Date(a.metadata.date))
 }
 fetchList()
+
+function resetReadingPosition() {
+    window.scrollTo(0, 0)
+}
 
 // Hook and check if the URL gets changed in the query params
 watch(url, async () => {
@@ -150,14 +167,35 @@ watch(url, async () => {
                 <Transition name="list">
                     <div class="flex flex-col" :key="url">
                         <h1>{{ title }}</h1>
+                        <small>{{ date }}</small>
                         <div class="max-w-50 flex flex-row justify-center">
                             <div v-for="tag in tags" :key="tag" class="m-1 text-center">
                                 <span class="text-xs bg-black border-purple-400 border-2 text-white p-1 rounded-md">{{
                                     tag }}</span>
                             </div>
                         </div>
+                        <div>
+                            <!-- Next/Prev controls, on the left and right side using PostCards -->
+                            <div class="flex max-w-4xl max-md:w-screen">
+                                <div class="justify-start">
+                                    <NuxtLink v-if="previous" :onclick="resetReadingPosition" :to="previous" class="m-2 text-white">Previous</NuxtLink>
+                                </div>
+                                <div class="justify-end">
+                                    <NuxtLink v-if="next" :onclick="resetReadingPosition" :to="next" class="m-2 text-white">Next</NuxtLink>
+                                </div>
+                            </div>
+                        </div>
                         <Card class="text-pretty max-w-4xl mt-4 max-md:w-screen text-left">
                             <Markdown :text="text"></Markdown>
+                            <!-- Aligned next/prev controls -->
+                            <div class="flex">
+                                <div class="justify-start">
+                                    <NuxtLink v-if="previous" :onclick="resetReadingPosition" :to="previous" class="m-2 text-white">Previous</NuxtLink>
+                                </div>
+                                <div class="justify-end">
+                                    <NuxtLink v-if="next" :onclick="resetReadingPosition" :to="next" class="m-2 text-white">Next</NuxtLink>
+                                </div>
+                            </div>
                         </Card>
                     </div>
                 </Transition>

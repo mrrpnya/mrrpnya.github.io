@@ -31,17 +31,8 @@ export default function configured_markdown(): MarkdownIt {
                 "</code></pre>";
         },
     });
-   // .use(figure, {
-   //     mathFence: true,
-   //     render: (content: any, displayMode: any) => {
-   //         // render tex here and return svg
-   //         console.log("figure render");
-   //         console.log(content);
-   //         return TeXToSVG(content);
-   //     },
-   // });
 
-    md = md.use(tab)
+    md = md
         .use(tasklist)
         .use(mark)
         .use(footnote)
@@ -51,6 +42,8 @@ export default function configured_markdown(): MarkdownIt {
                 "important", "success", "caution", "question", "done",
                 "quote", "deprecated", "example"
             ],
+        }).use(tab, {
+            name: "tabs"
         });
 
     md.renderer.rules.text = function (tokens, idx, options, env, self) {

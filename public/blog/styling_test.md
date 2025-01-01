@@ -1,7 +1,7 @@
 ---
 title: Styling Test
 description: A test post to see how the site styling looks
-date: 2024-12-31
+date: 2025-01-01
 tags: ['meta', 'web']
 ---
 

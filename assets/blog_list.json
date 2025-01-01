@@ -2,6 +2,13 @@
   "posts": [
     {
       "metadata": {
+    "description": "A guide to using RomFS on the 3DS. (Old)",    "date": "2025-01-01",    "tags": ["3ds", "programming", "c", "devkitpro", "old"],    "previous": "old3ds_helloworld.md",    "next": "old3ds_touchscreen.md"
+      },
+      "id": "old3ds_romfs",
+      "url": "/blog/old3ds_romfs.md"
+    },
+    {
+      "metadata": {
     "description": "A curated list of awesome stuff I like",    "date": "2024-11-26",    "tags": ["awesome", "curated"]
       },
       "id": "awesome",
@@ -16,10 +23,24 @@
     },
     {
       "metadata": {
-    "description": "A test post to see how the site styling looks",    "date": "2024-12-31",    "tags": ["meta", "web"]
+    "description": "A guide to using the touchscreen on the 3DS. (Old)",    "date": "2025-01-01",    "tags": ["3ds", "programming", "c", "devkitpro", "old"],    "previous": "old3ds_romfs.md"
+      },
+      "id": "old3ds_touchscreen",
+      "url": "/blog/old3ds_touchscreen.md"
+    },
+    {
+      "metadata": {
+    "description": "A test post to see how the site styling looks",    "date": "2025-01-01",    "tags": ["meta", "web"]
       },
       "id": "styling_test",
       "url": "/blog/styling_test.md"
+    },
+    {
+      "metadata": {
+    "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",    "date": "2025-01-01",    "tags": ["3ds", "programming", "c", "devkitpro", "old"],    "next": "old3ds_romfs.md"
+      },
+      "id": "old3ds_helloworld",
+      "url": "/blog/old3ds_helloworld.md"
     }
   ]
 }

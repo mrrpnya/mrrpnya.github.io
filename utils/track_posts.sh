@@ -46,7 +46,9 @@ extract_front_matter() {
     # use awk
     local front_matter=$(echo "$data" | awk '/---/ && !f {f=1; next} f; /---/ {exit}')
 
-    echo "$front_matter" | sed '1d;$d' | sed 's/^/    "/' | sed 's/: /": "/' | sed 's/$/"/' | tr '\n' ',' | sed 's/,$//' | sed 's/"tags": "\[\(.*\)\]"/"tags": \[\1\]/g' | sed "s/'/\"/g"
+    local processed=$(echo "$front_matter" | sed '1d;$d' | sed 's/^/    "/' | sed 's/: /": "/' | sed 's/$/"/' | tr '\n' ',' | sed 's/,$//' | sed 's/"tags": "\[\(.*\)\]"/"tags": \[\1\]/g' | sed "s/'/\"/g")
+
+    echo "$processed"
 }
 
 # Find files via Regex

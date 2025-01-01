@@ -301,5 +301,4 @@ Hosted
     @apply border-2 border-purple-600;
     box-shadow: 0 0 7px #A020F0;
 }
-
 </style>
