@@ -4,6 +4,7 @@ import fm from 'front-matter';
 
 const props = defineProps({
     url: String,
+    tagFilter: Array
 });
 
 const url = ref(props.url)
@@ -48,8 +49,8 @@ async function fetchData() {
 
 <template>
     <NuxtLink :href="'/blog?post=' +url">
-    <div class="m-4 p-3 min-h-30 w-90 text-white rounded-2xl border-2 border-purple-300 transition hover:bg-purple-600 bg-purple-700 bg-opacity-50 hover:bg-opacity-70" 
-        :style="{ backgroundImage: `url(${background})` }">
+        <div class="m-4 min-h-30 min-width-90 text-white transition hover:bg-purple-600 bg-opacity-50 hover:bg-opacity-70">
+    <Card>
         <div v-if="loading" class="text-center animate-pulse">
         </div>
         <div v-else-if="error" class="text-center">
@@ -63,12 +64,18 @@ async function fetchData() {
                 </div>
                 <div class="flex justify-center">
                     <div v-for="tag in tags" :key="tag" class="m-1 text-center">
-                        <span class="text-xs bg-purple-800 border-purple-400 border text-white p-1 rounded-md">{{ tag }}</span>
+                        <div v-if="props.tagFilter.includes(tag)">
+                            <span class="text-xs bg-slate-700 border-white border-2 text-white p-1 rounded-md">{{ tag }}</span>
+                        </div>
+                        <div v-else>
+                            <span class="text-xs bg-black border-purple-400 border-2 text-white p-1 rounded-md">{{ tag }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <p>{{ description }}</p>
         </div>
+    </Card>
     </div>
     </NuxtLink>
 </template>

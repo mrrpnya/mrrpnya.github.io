@@ -40,7 +40,12 @@ echo "  \"posts\": ["
 # and output it as JSON.
 extract_front_matter() {
     local data="$1"
-    local front_matter=$(echo "$data" | sed -n '/^---/,/^---/p')
+
+    # Remove everything after the second '---'
+    # make sure everything between the first and second '---' is the front matter
+    # use awk
+    local front_matter=$(echo "$data" | awk '/---/ && !f {f=1; next} f; /---/ {exit}')
+
     echo "$front_matter" | sed '1d;$d' | sed 's/^/    "/' | sed 's/: /": "/' | sed 's/$/"/' | tr '\n' ',' | sed 's/,$//' | sed 's/"tags": "\[\(.*\)\]"/"tags": \[\1\]/g' | sed "s/'/\"/g"
 }
 

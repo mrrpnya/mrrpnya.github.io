@@ -24,10 +24,14 @@ export default function configured_markdown(): MarkdownIt {
         },
     });
 
-    md.renderer.rules.h6 = function (tokens, idx, options, env, self) {
-        return '<h6 class="text-lg font-semibold my-3"><br>' +
-            tokens[idx].content + "</h6>";
-    };
+    md.renderer.rules.text = function (tokens, idx, options, env, self) {
+        // headers 1-3 get an <hr> after them - With a class (md-hr-N) for styling
+        if (tokens[idx].type === "heading_open") {
+            const level = tokens[idx].tag;
+            return `<${level} class="md-hr-${level}">${tokens[idx + 1].content}</${level}>`;
+        }
+        return self.renderToken(tokens, idx, options);
+    }
 
     md.renderer.rules.softbreak = function (tokens, idx, options, env, self) {
         return "<br>";

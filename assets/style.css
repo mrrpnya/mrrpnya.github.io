@@ -75,7 +75,7 @@ pre code {
 
 code {
     font-family: 'JetBrains Mono', monospace;
-    @apply bg-purple-950 subpixel-antialiased;
+    @apply subpixel-antialiased;
 }
 
 /* Code if there is no pre tag before it */
@@ -83,17 +83,16 @@ code {
     @apply p-1 border-purple-800 border rounded-lg;
 }
 
-/* Markdown improvements to headers when a descendent of class="md-contents" */
-/* h1 to h2; Add a border to the bottom of the header */
-.md-contents h1:not(.md-override) {
-    @apply border-b-4 border-purple-600 mb-3;
-}
 .md-contents h2:not(.md-override) {
-    @apply border-b border-purple-600 mb-3;
 }
 
 .md-contents div:not(.md-override) {
     @apply mb-3 mt-3;
+}
+
+/* Apply glow effect to separators */
+.md-contents hr:not(.md-override) {
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.5);
 }
 
 /* Code theme */

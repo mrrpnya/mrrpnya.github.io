@@ -2,17 +2,24 @@
   "posts": [
     {
       "metadata": {
-    "title": "Awesome",    "description": "A curated list of awesome stuff I like",    "date": "2024-11-26",    "tags": ["awesome", "curated"]
+    "description": "A curated list of awesome stuff I like",    "date": "2024-11-26",    "tags": ["awesome", "curated"]
       },
       "id": "awesome",
       "url": "/blog/awesome.md"
     },
     {
       "metadata": {
-    "title": "Badges!",    "description": "A collection of 88x31 badges for various things",    "date": "2024-12-21",    "tags": ["badges", "retro", "web"]
+    "description": "A collection of 88x31 badges for various things",    "date": "2024-12-21",    "tags": ["badges", "retro", "web"]
       },
       "id": "badges",
       "url": "/blog/badges.md"
+    },
+    {
+      "metadata": {
+    "description": "A test post to see how the site styling looks",    "date": "2024-12-31",    "tags": ["meta", "web"]
+      },
+      "id": "styling_test",
+      "url": "/blog/styling_test.md"
     }
   ]
 }
