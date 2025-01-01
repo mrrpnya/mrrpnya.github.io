@@ -45,6 +45,7 @@ watch(() => props.text, (newVal) => {
 
 /* Markdown alerts get a box, a shadow, and a background+border color */
 .md-contents .markdown-alert:not(.md-override) {
+    @apply rounded-lg;
     border: 1px solid #A020F0;
     background-color: #333;
     box-shadow: 0 0 7px #A020F0;
@@ -211,7 +212,7 @@ watch(() => props.text, (newVal) => {
     background-color: #333;
     color: white;
 }
-
+Hosted
 .md-contents button:not(.md-override) {
     background-color: #333;
     color: white;
