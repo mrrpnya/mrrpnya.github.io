@@ -127,7 +127,25 @@
           }
         }
       ]
+    },
+    {
+      "2025-01-02 09:56:22": [
+        {
+          "public/blog/awesome.md": {
+            "op": "edit",
+            "hash": "0632400858006b93f2f36d87953538c2a400bacc75aaa29928aee226e8b343b1",
+            "char_count": 16767,
+            "word_count": 2343,
+            "title": "Awesome",
+            "description": "A curated list of awesome stuff I like",
+            "tags": [
+              "awesome",
+              "curated"
+            ]
+          }
+        }
+      ]
     }
   ],
-  "last_generated": "2025-01-02 06:28:58"
+  "last_generated": "2025-01-02 09:56:22"
 }
