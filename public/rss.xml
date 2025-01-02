@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>New article: 3DS Programming - Using RomFS</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/old3ds_romfs.md</link>
+			<description>A guide to using RomFS on the 3DS. (Old)</description>
+			<guid isPermaLink="false">6536545e88c8d6383769c89ae63e78bfb4a38d426b99c75b0e087f5e52d6218c</guid>
+			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
+			<category>old</category>
+		</item>
+		<item>
+			<title>New article: Awesome</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/awesome.md</link>
+			<description>A curated list of awesome stuff I like</description>
+			<guid isPermaLink="false">960782276b027827d5de323755faaa714497cbb9cfc789a49fb93c77b7768d8a</guid>
+			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
+			<category>curated</category>
+		</item>
+		<item>
+			<title>New article: Badges!</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/badges.md</link>
+			<description>A collection of 88x31 badges for various things</description>
+			<guid isPermaLink="false">7a3408d3706c852c858f5564933bfc487670aee4620e9c24869b3a77a17a056b</guid>
+			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
+			<category>web</category>
+		</item>
+		<item>
+			<title>New article: 3DS Programming - Touchscreen Input</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/old3ds_touchscreen.md</link>
+			<description>A guide to using the touchscreen on the 3DS. (Old)</description>
+			<guid isPermaLink="false">cfa6e588d90a63ed407288409e3194c84c578f6b3b848672c6adff2d5dc97e14</guid>
+			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
+			<category>old</category>
+		</item>
+		<item>
+			<title>New article: Styling Test</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/styling_test.md</link>
+			<description>A test post to see how the site styling looks</description>
+			<guid isPermaLink="false">151cdd1d99090d3732cde091a55ce9887b038a9979ba65f0ff8085b03a395a0b</guid>
+			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
+			<category>web</category>
+		</item>
+		<item>
+			<title>New article: 3DS Programming - Hello World</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/old3ds_helloworld.md</link>
+			<description>A guide to creating a simple Hello, World program for the 3DS. (Old)</description>
+			<guid isPermaLink="false">f4558244b9841236fd31cc27e7fceb1ace21cbcd573296f5a516ddc1acd6621b</guid>
+			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
+			<category>old</category>
+		</item>
+		<title>Post History</title>
+		<link>https://thefelidae.github.io</link>
+		<description>Post history of the site</description>
+	</channel>
+</rss>

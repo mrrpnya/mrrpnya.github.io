@@ -3,11 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json && nuxt build",
-    "dev": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json && nuxt dev",
-    "generate": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json && nuxt generate",
-    "preview": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json &&nuxt preview",
-    "postinstall": "rm assets/blog_list.json && sh utils/track_posts.sh >> assets/blog_list.json &&nuxt prepare"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@mdit/plugin-alert": "^0.14.0",

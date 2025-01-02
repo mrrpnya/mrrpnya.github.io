@@ -1,46 +1,103 @@
 {
+  "last_generated": "2025-01-01 19:03:52",
   "posts": [
     {
       "metadata": {
-    "description": "A guide to using RomFS on the 3DS. (Old)",    "date": "2025-01-01",    "tags": ["3ds", "programming", "c", "devkitpro", "old"],    "previous": "old3ds_helloworld.md",    "next": "old3ds_touchscreen.md"
+        "title": "3DS Programming - Using RomFS",
+        "description": "A guide to using RomFS on the 3DS. (Old)",
+        "date": "2025-01-01",
+        "tags": [
+          "3ds",
+          "programming",
+          "c",
+          "devkitpro",
+          "old"
+        ],
+        "previous": "old3ds_helloworld.md",
+        "next": "old3ds_touchscreen.md"
       },
-      "id": "old3ds_romfs",
-      "url": "/blog/old3ds_romfs.md"
+      "id": "/old3ds_romfs.md",
+      "url": "/old3ds_romfs.md",
+      "hash": "0b28a366868e9fa564b6a33d9b1aa1d8269f7971497f25488f05f54929e88410"
     },
     {
       "metadata": {
-    "description": "A curated list of awesome stuff I like",    "date": "2024-11-26",    "tags": ["awesome", "curated"]
+        "title": "Awesome",
+        "description": "A curated list of awesome stuff I like",
+        "date": "2024-11-26",
+        "tags": [
+          "awesome",
+          "curated"
+        ]
       },
-      "id": "awesome",
-      "url": "/blog/awesome.md"
+      "id": "/awesome.md",
+      "url": "/awesome.md",
+      "hash": "5d7fb989c4504082cc88cd284347dbb54b221834d2c281210be7c507cd07ae23"
     },
     {
       "metadata": {
-    "description": "A collection of 88x31 badges for various things",    "date": "2024-12-21",    "tags": ["badges", "retro", "web"]
+        "title": "Badges!",
+        "description": "A collection of 88x31 badges for various things",
+        "date": "2024-12-21",
+        "tags": [
+          "badges",
+          "retro",
+          "web"
+        ]
       },
-      "id": "badges",
-      "url": "/blog/badges.md"
+      "id": "/badges.md",
+      "url": "/badges.md",
+      "hash": "338ccfecc6523dff93708330a8b43af715f1e80d55e1cc3bea2d1a7306fc4f00"
     },
     {
       "metadata": {
-    "description": "A guide to using the touchscreen on the 3DS. (Old)",    "date": "2025-01-01",    "tags": ["3ds", "programming", "c", "devkitpro", "old"],    "previous": "old3ds_romfs.md"
+        "title": "3DS Programming - Touchscreen Input",
+        "description": "A guide to using the touchscreen on the 3DS. (Old)",
+        "date": "2025-01-01",
+        "tags": [
+          "3ds",
+          "programming",
+          "c",
+          "devkitpro",
+          "old"
+        ],
+        "previous": "old3ds_romfs.md"
       },
-      "id": "old3ds_touchscreen",
-      "url": "/blog/old3ds_touchscreen.md"
+      "id": "/old3ds_touchscreen.md",
+      "url": "/old3ds_touchscreen.md",
+      "hash": "59e0b9d701646fd5f747713832c47ce451e0ebe0975d4a148a820ca795741c2b"
     },
     {
       "metadata": {
-    "description": "A test post to see how the site styling looks",    "date": "2025-01-01",    "tags": ["meta", "web"]
+        "title": "Styling Test",
+        "description": "A test post to see how the site styling looks",
+        "date": "2025-01-01",
+        "tags": [
+          "meta",
+          "web"
+        ]
       },
-      "id": "styling_test",
-      "url": "/blog/styling_test.md"
+      "id": "/styling_test.md",
+      "url": "/styling_test.md",
+      "hash": "8e6c14fdef5fd67ea17dcc8b58d59f2040d8250c15c2d18d3e1fdc1b1b60dc54"
     },
     {
       "metadata": {
-    "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",    "date": "2025-01-01",    "tags": ["3ds", "programming", "c", "devkitpro", "old"],    "next": "old3ds_romfs.md"
+        "title": "3DS Programming - Hello World",
+        "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",
+        "date": "2025-01-01",
+        "tags": [
+          "3ds",
+          "programming",
+          "c",
+          "devkitpro",
+          "old"
+        ],
+        "next": "old3ds_romfs.md"
       },
-      "id": "old3ds_helloworld",
-      "url": "/blog/old3ds_helloworld.md"
+      "id": "/old3ds_helloworld.md",
+      "url": "/old3ds_helloworld.md",
+      "hash": "86e0bd1deae0d00b17ab0960634ea7292d6387063f70600cec4001564fde9514"
     }
   ]
 }
