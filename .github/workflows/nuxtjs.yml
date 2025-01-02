@@ -39,7 +39,7 @@ jobs:
       - name: Generate RSS feed
         run: python3 util/pageupdater/rss_xml_gen.py
       - name: Upload artifacts (assets and public)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: artifacts
           path: |
