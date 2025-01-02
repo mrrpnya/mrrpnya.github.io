@@ -5,13 +5,46 @@ date: 2024-11-26
 tags: ['awesome', 'curated']
 ---
 
-# Awesome Stuff (WIP)
+<!-- Some common stuff -->
+
+<style>
+.md-contents ul + blockquote:not(.md-override), .md-contents ol + blockquote:not(.md-override) {
+    margin-left: 1rem;
+}
+</style>
+
+# Awesome Stuff
+
+Inspired by [Awesome](https://github.com/sindresorhus/awesome), this is a dumping ground of stuff of interest.
+
+> [!info]
+> This is going to be long, and will probably be getting a lot of updates.
+> I intend to just keep adding to this.
+
+## Table of Contents
+
+- [Awesome Stuff](#awesome-stuff)
+  - [Table of Contents](#table-of-contents)
+  - [Software](#software)
+    - [Operating Systems](#operating-systems)
+  - [Software Development](#software-development)
+    - [Languages](#languages)
+    - [Game Development](#game-development)
+  - [Other Projects](#other-projects)
+  - [Games](#games)
+  - [Media](#media)
+    - [Shows](#shows)
+    - [Music](#music)
+    - [Content Creators](#content-creators)
+    - [Political Content](#political-content)
+    - [Artists](#artists)
+    - [Other](#other)
 
 ## Software
 
 ### Operating Systems
 
-Honestly can't recommend Windows at all nowadays. It's just... Both spyware and bloatware. It's been enshittified to the point where it's just not worth using in comparison to Linux for most, if not all purposes nowadays, and the only thing it has going for it is existing software, which is a rapidly fading, if not fade***d***, advantage.  
+Honestly can't recommend Windows at all nowadays. It's just... Malware now. It's to the point where it's just not worth using in comparison to Linux for most, if not all purposes nowadays, and the only thing it has going for it is existing software, which is a rapidly fading, if not fade***d***, advantage.  
 Windows Recall was especially egregious - The fact that a program that records all your screens, saves it to an unencrypted SQLite database, then feeds it to an AI network was *even on the table* is just... ***YIKES.***
 
 - [Arch Linux](https://archlinux.org/)
@@ -21,6 +54,7 @@ did I mention I use Arch
 I use Arch btw just in case you didn't know
 arch btw
 /j
+> On a more serious note, it's pretty good if you want a rolling-release distro that's easy to customize. It's also a great choice if you want to learn more about how Linux works.
 
 - [NixOS](https://nixos.org/)
 
@@ -51,67 +85,148 @@ And for 2D games... Godot absolutely ***MOPS THE FLOOR WITH UNITY.*** It hardly 
 - [Material Maker](https://www.materialmaker.org/)
 
 > Material Maker is a toolkit made in Godot that allows you to create procedural PBR materials, similar to how you would with Blender shaders.
-It's a great tool for creating materials, and it's open-source, so you can modify it to your heart's content.
+It's a good tool for creating materials, and it's open-source, so you can modify it to your heart's content.
+
+## Other Projects
+
+- [Personal Security Checklist](https://github.com/Lissy93/personal-security-checklist) by Lissy93
+
+> A checklist for improving your personal security. It's a great resource for anyone who wants to improve their security. Also a good pin for public communication.
 
 ## Games
 
-I will be using the Entertainment Software Rating Board's rating system for games, under my judgement if a rating does not already exist.
-These may not actually be rated by the ESRB, but I will be using their rating system for simplicity.
-See their [Ratings Guide](https://www.esrb.org/ratings-guide/) for more information about their rating system.
-
 - [Celeste](https://www.celestegame.com/)
-***Rated E10 for Everyone 10+ by the ESRB***
 
-> What can I say? It's a great game. The story is touching, the gameplay is challenging, and the music is amazing.
+> What can I say? It's a great game.
 Plus, the modding scene is very intense if you're into that.
-Also... Heat from fire, fire from heat, if ya know. 🏳️‍⚧️
+Also... Heat from fire, fire from heat, if ya know 🏳️‍⚧️
+(Look at the highest-rated Steam reviews. You'll see what I mean. Trans people can double-jump, apparently :3)
 
 - [Wolfenstein: The New Order](https://store.steampowered.com/app/201810/Wolfenstein_The_New_Order/) and its sequel, [Wolfenstein: The New Colossus](https://store.steampowered.com/app/612880/Wolfenstein_II_The_New_Colossus/)
-***Rated M for Mature 17+ by the ESRB***
 
 > Before Id made DOOM in 1993, they made Wolfenstein, a game about beating up Nazis. Need I say more?  
-They made a new series of games, starting with The New Order, that are a great mix of story and gameplay. The story is great, the gameplay is great, and the music is great. Criminal that there isn't a third one, though.
+They made a new series of games, starting with The New Order, that are a great mix of story and gameplay. The story is good, the gameplay is great, and the music is also good. Criminal that there isn't a third one, though.
+Pretty patriotic :3
+
 
 - [OneShot](https://store.steampowered.com/app/420530/OneShot/)
-***Rated E for Everyone by the ESRB***
 
 > You only get one shot.
+> I haven't beaten it yet, so stay tuned for more thoughts.
 
 - [Papers, Please](https://store.steampowered.com/app/239030/Papers_Please/)
-***Rated M for Mature 17+ by the ESRB***
 
 > ***Glory to Arstotzka.***
+> 
+> ![:3](https://media.tenor.com/DVxH-6Wc0TgAAAAM/paper-please.gif)
 
 - [Sonic Adventure 2](https://store.steampowered.com/app/213610/Sonic_Adventure_2/)
 
-***Rated E10 for Everyone 10+ by the ESRB***
 > I grew up with SA2. Sure, it has plenty of things that did NOT age well - Such as the audio mixing, the music is *twice as loud* as it should be during scenes, I can barely hear characters, or the quality of the ports being pretty abysmal - But it is still quite a fun game. The story is, perhaps, among the best, in the series, and Doctor Ivo "Eggman" Robotnik's characterization is ***OUTRIGHT the best in the series***. The music (Crush 40, anyone?) is also top-notch.  
 If you play this on PC, such as the Steam version, there exists a mod loader, and plenty of mods to improve the myriad issues with the port.  
 Mad Space is a bit maddening (Well, it's in the name I suppose) though, and the removal of the open-world that SA1 had isn't that great.
 
+- [Plants vs. Zombies](https://store.steampowered.com/app/3590/Plants_vs_Zombies_Game_of_the_Year/)
+
+> There's a zombie on your lawn.
+> I haven't beaten it in a LONG time, so stay tuned for more thoughts, but it's good.
+
 ## Media
-
-I will be using the Motion Picture Association's rating system for movies or media in general should it not have its own rating system, under my judgement if a rating does not already exist.  
-These may not actually be rated by the MPA, but I will be using their rating system for simplicity.
-See the Motion Picture Association's [Film Ratings](https://www.motionpictures.org/film-ratings/) for more information about their rating system.
-
-I will be using the TV Parental Guidelines's rating system for shows or series, under my judgement if a rating does not already exist.
-These may not actually be rated by official organizations, but I will be using their rating system for simplicity.
 
 ### Shows
 
+> [!note]
+> It seems Hasbro has started dumping older/discontinued shows onto YouTube for free viewing. I'm not sure if it's region-locked, but it's worth a shot, and I'll be linking to those where possible.
+> And it's usually the ENTIRE series, so... have fun with that.
+
 - [One Piece](https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece)
-***Rating varies depending on parts of the show, and movies and whatnot.***
-***I rate the show as a range from TV-PG V to TV-MA LV.***
 
 > Oda had better finish the story. I swear to Satan.
+> It's a great show... If you have patience. The Netflix adaptation is also pretty good.
 
-#### Fanmade
+- [Dragon Ball Z](https://www.crunchyroll.com/series/G9VHN9PPW/dragon-ball-z)
+> Need it any introduction? Watch Kai version if it's too long. Abridged is also an alternative to Kai if you don't mind the story being told more comedically.
 
 - [Dragon Ball Z Abridged](https://www.youtube.com/watch?v=2nYozPLpJRE&list=PL6EC7B047181AD013) (and related "movies" and videos) by TeamFourStar
-***I rate this show and its movies as TV-MA DLSV (the whole shebang, in other words)***
 
-> It's... The iconic parody of all time. It's a great show, and it's a shame that they aren't doing Buu Saga.
+> It's... Well. It's a great show, covers the story of Dragon Ball Z up to the Cell saga.
 Even though the series is more comedy focused, it still manages to tell the story of Dragon Ball Z in an *excellent* way.
-The creators are also based as hell.
-...Watch it. Just watch it.
+The creators are also based.
+Not appropriate for children, though.
+
+- [Transformers: Prime](https://www.youtube.com/playlist?list=PL7VEq3tXc6hvcP7u7xHqqavDbSarCInI4)
+
+> Transformers: Prime takes place in the Aligned continuity, and was my first exposure to the franchise.
+Despite mainly being for kids, it's surprisingly dark and mature. It aged pretty well, too.
+Like... In the first episode, a character gets brutally and personally killed on screen by Starscream permanently. Then later, ||a character gets tortured by Starscream early on.||
+...A kids show, folks.
+I mean, I'm sure a part of it was to afford... Dwayne Johnson as Cliffjumper, but still.
+It also realistically portrays war, its consequences and compromises, and character struggles.
+
+- [My Little Pony: Friendship is Magic](https://www.youtube.com/@FriendshipIsMagicOfficial)
+
+> Despite appearing to be a little kids show, it's actually pretty and famously appealing to adults as well. It's compelling, USUALLY well written (though the later seasons feel rushed at times...),
+and so on.
+It ended a while ago and I think the community has taken a turn for the worse since then, but the show itself is still good.
+
+### Music
+
+- [Man on the Internet](https://www.youtube.com/@ManontheInternet)
+
+- [GaMetal](https://www.youtube.com/@JonnyAtma)
+
+- [FamilyJules](https://www.youtube.com/@FamilyJules)
+  
+- [Toby Fox](https://tobyfox.bandcamp.com/)
+
+- [Crush 40](https://www.youtube.com/@Crush40)
+
+> Famous for their work on the Sonic the Hedgehog series, particularly Sonic Adventure 2.
+
+- [The Living Tombstone](https://www.youtube.com/@TheLivingTombstone)
+
+- [Lena Raine](https://www.youtube.com/@kuraine)
+
+> Also responsible for the Celeste soundtrack. Replaced C418 as the composer for Minecraft.
+
+### Content Creators
+
+- [The Yogscast](https://www.youtube.com/@Yogscast)
+
+> A group of British YouTubers who make gaming content. They're the ones who got Minecraft popular, and they're still going strong today. They usually are more active on side-channels or Twitch though.
+
+- [The Golden Bolt](https://www.youtube.com/@TheGoldenBolt)
+
+> A Ratchet and Clank fan who makes retrospective and review content, as well as other gaming content. Pretty in-depth, long form stuff.
+
+- [VSauce](https://www.youtube.com/@Vsauce)
+<!-- Hey, Vsauce! Michael here. -->
+<!-- ... -->
+<!-- Do chairs exist? -->
+
+> A channel that makes educational content. They cover a wide range of topics, from science to philosophy to history. They're iconic.
+
+### Political Content
+
+> [!warning]
+> If you're not into politics, [you might want to skip this section.](#artists)
+> Also, if you start getting *angry at* this section, you might want to take a step back and think about why you're getting angry.
+> Unfold the Details to see the content.
+
+<details>
+
+> [!note]
+> I'm strongly left-leaning, so most of these are going to be left-leaning.
+> Trumpism is Nazism in denial. Compare their ideologies, behaviors, rhetoric, and actions.
+
+- [Countdown with Keith Olbermann](https://www.youtube.com/@KeithOlbermann)
+<!-- ...Is a production by iHeartRadio. -->
+> Keith Olbermann is a political commentator who has been in the business for a long time. He's a great commentary for information on current events, and he's not afraid to call out people who are doing wrong.
+He was inactive for a long time, starting again with the resurgence of Nazi activity in the US.
+Past political content, he also has sub-series within his show, such as "Every Dog Has Its Day", or "Worst Person in the World".
+He does not stand for this Nazism here in the US, ***and neither should you.***
+</details>
+
+### Artists
+
+### Other
