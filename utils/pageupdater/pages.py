@@ -79,6 +79,7 @@ def get_pages_info(search_directory, root_directory):
             # Add the metadata, sha256 hash, character count, word count, and path to the dictionary
             page_info[full_path] = {
                 "local_path": local_path,
+                "absolute_path": full_path,
                 "metadata": metadata,
                 "hash": sha256_hash,
                 "char_count": char_count,

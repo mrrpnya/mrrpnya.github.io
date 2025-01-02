@@ -28,7 +28,8 @@ def generate_page_list(pages_info):
         page_dict = {
             "metadata": page["metadata"],
             'id': page["local_path"],
-            'url': page["local_path"],
+            # Remove the public/ prefix from the path
+            'url': page["absolute_path"].replace("public", ""),
             "hash": page["hash"],
         }
 
