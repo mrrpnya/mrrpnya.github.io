@@ -1,5 +1,5 @@
 {
-  "last_generated": "2025-01-01 19:03:52",
+  "last_generated": "2025-01-02 05:05:41",
   "posts": [
     {
       "metadata": {
@@ -22,6 +22,20 @@
     },
     {
       "metadata": {
+        "title": "Styling Test",
+        "description": "A test post to see how the site styling looks",
+        "date": "2025-01-01",
+        "tags": [
+          "meta",
+          "web"
+        ]
+      },
+      "id": "/styling_test.md",
+      "url": "/styling_test.md",
+      "hash": "8e6c14fdef5fd67ea17dcc8b58d59f2040d8250c15c2d18d3e1fdc1b1b60dc54"
+    },
+    {
+      "metadata": {
         "title": "Awesome",
         "description": "A curated list of awesome stuff I like",
         "date": "2024-11-26",
@@ -36,18 +50,21 @@
     },
     {
       "metadata": {
-        "title": "Badges!",
-        "description": "A collection of 88x31 badges for various things",
-        "date": "2024-12-21",
+        "title": "3DS Programming - Hello World",
+        "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",
+        "date": "2025-01-01",
         "tags": [
-          "badges",
-          "retro",
-          "web"
-        ]
+          "3ds",
+          "programming",
+          "c",
+          "devkitpro",
+          "old"
+        ],
+        "next": "old3ds_romfs.md"
       },
-      "id": "/badges.md",
-      "url": "/badges.md",
-      "hash": "338ccfecc6523dff93708330a8b43af715f1e80d55e1cc3bea2d1a7306fc4f00"
+      "id": "/old3ds_helloworld.md",
+      "url": "/old3ds_helloworld.md",
+      "hash": "86e0bd1deae0d00b17ab0960634ea7292d6387063f70600cec4001564fde9514"
     },
     {
       "metadata": {
@@ -69,35 +86,18 @@
     },
     {
       "metadata": {
-        "title": "Styling Test",
-        "description": "A test post to see how the site styling looks",
-        "date": "2025-01-01",
+        "title": "Badges!",
+        "description": "A collection of 88x31 badges for various things",
+        "date": "2024-12-21",
         "tags": [
-          "meta",
+          "badges",
+          "retro",
           "web"
         ]
       },
-      "id": "/styling_test.md",
-      "url": "/styling_test.md",
-      "hash": "8e6c14fdef5fd67ea17dcc8b58d59f2040d8250c15c2d18d3e1fdc1b1b60dc54"
-    },
-    {
-      "metadata": {
-        "title": "3DS Programming - Hello World",
-        "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",
-        "date": "2025-01-01",
-        "tags": [
-          "3ds",
-          "programming",
-          "c",
-          "devkitpro",
-          "old"
-        ],
-        "next": "old3ds_romfs.md"
-      },
-      "id": "/old3ds_helloworld.md",
-      "url": "/old3ds_helloworld.md",
-      "hash": "86e0bd1deae0d00b17ab0960634ea7292d6387063f70600cec4001564fde9514"
+      "id": "/badges.md",
+      "url": "/badges.md",
+      "hash": "338ccfecc6523dff93708330a8b43af715f1e80d55e1cc3bea2d1a7306fc4f00"
     }
   ]
 }
