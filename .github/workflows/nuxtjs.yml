@@ -34,6 +34,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Activate Venv
         run: source venv/bin/activate
+      - name: Install dependencies
+        run: pip install python-frontmatter
       - name: Update Page manifest
         run: python utils/pageupdater/page_list_gen.py
       - name: Update Page history
