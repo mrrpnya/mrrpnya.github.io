@@ -30,11 +30,11 @@ def history_to_rss(history):
     root.set("version", "2.0")
     channel = ET.SubElement(root, "channel")
     title = ET.SubElement(channel, "title")
-    title.text = "Post History"
+    title.text = "TheFelidae's Blog Updates"
     link = ET.SubElement(channel, "link")
     link.text = "https://thefelidae.github.io"
     description = ET.SubElement(channel, "description")
-    description.text = "Post history of the site"
+    description.text = "This feed displays updates regarding TheFelidae's blog."
 
     for post in history_dict["post_history"]:
         for date, posts in post.items():

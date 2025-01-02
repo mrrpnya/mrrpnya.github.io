@@ -4,6 +4,19 @@
 
 [`thelunacy@proton.me`](mailto:thelunacy@proton.me)
 
+<div style="display: flex; justify-content: center; align-items: center;">
+
+<!-- /rss.xml -->
+[![RSS](https://img.shields.io/badge/RSS-Subscribe-orange?style=for-the-badge&logo=rss)](https://thefelidae.github.io/rss.xml)
+
+<!-- Fediverse -->
+[![Fediverse](https://img.shields.io/badge/Fediverse-Follow-blue?style=for-the-badge&logo=mastodon)](https://social.smgames.club/@mrrp)
+
+<!-- Visitors -->
+![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fmisslunatic%2FMissLunatic&label=VIsitors&countColor=%23e7c4ff)
+
+</div>
+
 ###### 🏳️‍⚧️ I am exploring identity, so this may change or I might go by different things elsewhere.
 
 ###### Regardless, try to respect this or else. I'm not here to debate my existence.
@@ -17,8 +30,6 @@
 ---
 
 <div style="justify-content: center; display: flex; align-items: center;">
-
-![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fmisslunatic%2FMissLunatic&label=VIsitors&countColor=%23e7c4ff&style=plastic)
 
 </div>
 
