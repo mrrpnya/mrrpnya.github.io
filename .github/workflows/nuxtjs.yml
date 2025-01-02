@@ -32,6 +32,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Activate Venv
+        run: source venv/bin/activate
       - name: Update Page manifest
         run: python3 util/pageupdater/page_list_gen.py
       - name: Update Page history
