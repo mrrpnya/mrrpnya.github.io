@@ -39,11 +39,13 @@ async function fetchData() {
     loading.value = true
     
     try {
-        data.value = await (await fetch(url.value)).text()
+        data.value = await (await fetch("/blog" + url.value)).text()
+        console.log(url.value)
         const processed = fm(data.value)
         background.value = processed.attributes.background
         title.value = processed.attributes.title
         description.value = processed.attributes.description
+        console.log(JSON.stringify(processed.attributes.date))
         date.value = processed.attributes.date
         tags.value = processed.attributes.tags
 
