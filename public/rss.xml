@@ -49,6 +49,16 @@
 			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
 			<category>old</category>
 		</item>
+		<item>
+			<title>Edited article: Awesome</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/awesome.md</link>
+			<description>Edited this article: It now sits at 15304 characters and 2248 words
+
+A curated list of awesome stuff I like</description>
+			<guid isPermaLink="false">94f5274ae1e331d0f3aabc3aaff6296e2bbcb48e9dd2e06a7be32da555c841cc</guid>
+			<pubDate>Thu, 02 Jan 2025 06:28:58 +0000</pubDate>
+			<category>curated</category>
+		</item>
 		<title>TheFelidae's Blog Updates</title>
 		<link>https://thefelidae.github.io</link>
 		<description>This feed displays updates regarding TheFelidae's blog.</description>
