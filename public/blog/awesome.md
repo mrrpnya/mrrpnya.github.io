@@ -39,6 +39,9 @@ Inspired by [Awesome](https://github.com/sindresorhus/awesome), this is a dumpin
     - [Political Content](#political-content)
     - [Artists](#artists)
     - [Other](#other)
+  - [Hardware](#hardware)
+    - [Computers](#computers)
+    - [Computer-Aided Manufacturing](#computer-aided-manufacturing)
 
 ## Software
 
@@ -46,6 +49,11 @@ Inspired by [Awesome](https://github.com/sindresorhus/awesome), this is a dumpin
 
 Honestly can't recommend Windows at all nowadays. It's just... Malware now. It's to the point where it's just not worth using in comparison to Linux for most, if not all purposes nowadays, and the only thing it has going for it is existing software, which is a rapidly fading, if not fade***d***, advantage.  
 Windows Recall was especially egregious - The fact that a program that records all your screens, saves it to an unencrypted SQLite database, then feeds it to an AI network was *even on the table* is just... ***YIKES.***
+
+- [Linux Mint](https://linuxmint.com/)
+
+> Linux Mint is the best choice for people who are new to Linux. It's easy to use, and it's based on Ubuntu, so it has a lot of software available for it. It's also a great choice for people who want a stable system that's easy to maintain.
+It's focusing more on good defaults and a good user experience for the layman, so it's not tinker-y at all, but you can still do so if you want.
 
 - [Arch Linux](https://archlinux.org/)
 
@@ -131,6 +139,17 @@ Mad Space is a bit maddening (Well, it's in the name I suppose) though, and the 
 > There's a zombie on your lawn.
 > I haven't beaten it in a LONG time, so stay tuned for more thoughts, but it's good.
 
+- [Portal 2](https://store.steampowered.com/app/620/Portal_2/)
+
+> The cake is a lie.
+> I grew up with the game, it's a game of all time and a perfect sequel.
+The co-op is also good, and the community test chambers are a great addition...Aside from a lot of the popular ones being kinda... bad? In the Steam Workshop.
+Hammer and all the tools are included with the game, so you can make maps, mods, etc. for it.
+
+- [Katamari Damacy](https://store.steampowered.com/app/848350/Katamari_Damacy_REROLL/)
+
+> I played the PS2 version for the most part - It's good, and the soundtrack is... good but very (good) weird.
+
 ## Media
 
 ### Shows
@@ -145,6 +164,7 @@ Mad Space is a bit maddening (Well, it's in the name I suppose) though, and the 
 > It's a great show... If you have patience. The Netflix adaptation is also pretty good.
 
 - [Dragon Ball Z](https://www.crunchyroll.com/series/G9VHN9PPW/dragon-ball-z)
+
 > Need it any introduction? Watch Kai version if it's too long. Abridged is also an alternative to Kai if you don't mind the story being told more comedically.
 
 - [Dragon Ball Z Abridged](https://www.youtube.com/watch?v=2nYozPLpJRE&list=PL6EC7B047181AD013) (and related "movies" and videos) by TeamFourStar
@@ -158,15 +178,14 @@ Not appropriate for children, though.
 
 > Transformers: Prime takes place in the Aligned continuity, and was my first exposure to the franchise.
 Despite mainly being for kids, it's surprisingly dark and mature. It aged pretty well, too.
-Like... In the first episode, a character gets brutally and personally killed on screen by Starscream permanently. Then later, ||a character gets tortured by Starscream early on.||
+Like... In the first episode, a character gets brutally and personally killed on screen by Starscream permanently. And it's not a one-off thing. It's recurring in terms of impact on the characters.
 ...A kids show, folks.
 I mean, I'm sure a part of it was to afford... Dwayne Johnson as Cliffjumper, but still.
 It also realistically portrays war, its consequences and compromises, and character struggles.
 
 - [My Little Pony: Friendship is Magic](https://www.youtube.com/@FriendshipIsMagicOfficial)
 
-> Despite appearing to be a little kids show, it's actually pretty and famously appealing to adults as well. It's compelling, USUALLY well written (though the later seasons feel rushed at times...),
-and so on.
+> Despite appearing to be a little kids show, it's actually quite appealing to adults as well. It's compelling, USUALLY well written (though the later seasons feel rushed at times... Which, I hear they were.), and so on.
 It ended a while ago and I think the community has taken a turn for the worse since then, but the show itself is still good.
 
 ### Music
@@ -189,6 +208,8 @@ It ended a while ago and I think the community has taken a turn for the worse si
 
 > Also responsible for the Celeste soundtrack. Replaced C418 as the composer for Minecraft.
 
+- [The Stupendium](https://www.youtube.com/@TheStupendium) (they/them)
+
 ### Content Creators
 
 - [The Yogscast](https://www.youtube.com/@Yogscast)
@@ -205,6 +226,38 @@ It ended a while ago and I think the community has taken a turn for the worse si
 <!-- Do chairs exist? -->
 
 > A channel that makes educational content. They cover a wide range of topics, from science to philosophy to history. They're iconic.
+
+- [OverSimplified](https://www.youtube.com/@OverSimplified)
+
+> A channel that makes animated history videos. They typically incorporate humor, and are quite to-the-point.
+
+- [Technology Connections](https://www.youtube.com/@TechnologyConnections)
+
+> A channel that makes videos about technology. They cover a wide range of topics, from the history of technology to how technology works. Often niche topics, but interesting.
+
+- [Chipflake](https://www.youtube.com/@Chipflake)
+
+- [styropyro](https://www.youtube.com/@styropyro)
+
+> Do you like... Wayyyy overkill lasers?
+I'm sure the feds have an eye on him with what he casually builds.
+
+- [Not Just Bikes](https://www.youtube.com/@NotJustBikes)
+
+> A channel that makes videos about urban planning and transportation, and critiques of the way cities are designed.
+
+- [Tasting History with Max Miller](https://www.youtube.com/@TastingHistory)
+
+> A channel that makes videos about the history of food. They usually make recipes from history and talk about the history surrounding them - Why they were made, the context they were made in, etc.
+
+- [The Onion](https://www.youtube.com/@TheOnion)
+
+> A satirical news organization. They make videos that parody news shows. Here's one.
+> <iframe width="560" height="315" src="https://www.youtube.com/embed/j5S9ZH2Kavw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- [Natural Habitat Shorts](https://www.youtube.com/@NaturalHabitatShorts)
+
+> A channel that makes videos about facts of the natural world, told via animation and exaggerated humor.
 
 ### Political Content
 
@@ -225,8 +278,21 @@ It ended a while ago and I think the community has taken a turn for the worse si
 He was inactive for a long time, starting again with the resurgence of Nazi activity in the US.
 Past political content, he also has sub-series within his show, such as "Every Dog Has Its Day", or "Worst Person in the World".
 He does not stand for this Nazism here in the US, ***and neither should you.***
+
+- [Innuendo Studios](https://www.youtube.com/@InnuendoStudios)
+
+> Innuendo Studios illustrates the tactics and strategies of the far-right, and how to counter them. They also cover other topics, such as the history of the internet, and the history of the far-right.
+
 </details>
 
 ### Artists
 
 ### Other
+
+## Hardware
+
+### Computers
+
+### Computer-Aided Manufacturing
+
+- [Bambu Lab P1 series](https://bambulab.com/en/p1)
