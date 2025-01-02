@@ -206,19 +206,24 @@ It ended a while ago and I think the community has taken a turn for the worse si
 
 - [Lena Raine](https://www.youtube.com/@kuraine)
 
+
 > Also responsible for the Celeste soundtrack. Replaced C418 as the composer for Minecraft.
 
 - [The Stupendium](https://www.youtube.com/@TheStupendium) (they/them)
 
+> <iframe width="320" height="180" src="https://www.youtube.com/embed/sr3W3XVXVB0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> 
 ### Content Creators
 
 - [The Yogscast](https://www.youtube.com/@Yogscast)
 
 > A group of British YouTubers who make gaming content. They're the ones who got Minecraft popular, and they're still going strong today. They usually are more active on side-channels or Twitch though.
+> <iframe width="320" height="180" src="https://www.youtube.com/embed/ytWz0qVvBZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - [The Golden Bolt](https://www.youtube.com/@TheGoldenBolt)
 
 > A Ratchet and Clank fan who makes retrospective and review content, as well as other gaming content. Pretty in-depth, long form stuff.
+> <iframe width="320" height="180" src="https://www.youtube.com/embed/GbzyTqLjrso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - [VSauce](https://www.youtube.com/@Vsauce)
 <!-- Hey, Vsauce! Michael here. -->
@@ -226,6 +231,7 @@ It ended a while ago and I think the community has taken a turn for the worse si
 <!-- Do chairs exist? -->
 
 > A channel that makes educational content. They cover a wide range of topics, from science to philosophy to history. They're iconic.
+> <iframe width="320" height="180" src="https://www.youtube.com/embed/SrU9YDoXE88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - [OverSimplified](https://www.youtube.com/@OverSimplified)
 
@@ -234,8 +240,11 @@ It ended a while ago and I think the community has taken a turn for the worse si
 - [Technology Connections](https://www.youtube.com/@TechnologyConnections)
 
 > A channel that makes videos about technology. They cover a wide range of topics, from the history of technology to how technology works. Often niche topics, but interesting.
+> <iframe width="320" height="180" src="https://www.youtube.com/embed/6h9JhW-m35o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - [Chipflake](https://www.youtube.com/@Chipflake)
+
+> A German animator who makes story-time animations, and streams art on YouTube.
 
 - [styropyro](https://www.youtube.com/@styropyro)
 
@@ -249,11 +258,12 @@ I'm sure the feds have an eye on him with what he casually builds.
 - [Tasting History with Max Miller](https://www.youtube.com/@TastingHistory)
 
 > A channel that makes videos about the history of food. They usually make recipes from history and talk about the history surrounding them - Why they were made, the context they were made in, etc.
+> <iframe width="320" height="180" src="https://www.youtube.com/embed/MrKafmzGNJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - [The Onion](https://www.youtube.com/@TheOnion)
 
 > A satirical news organization. They make videos that parody news shows. Here's one.
-> <iframe width="560" height="315" src="https://www.youtube.com/embed/j5S9ZH2Kavw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> <iframe width="320" height="180" src="https://www.youtube.com/embed/j5S9ZH2Kavw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - [Natural Habitat Shorts](https://www.youtube.com/@NaturalHabitatShorts)
 
@@ -296,3 +306,4 @@ He does not stand for this Nazism here in the US, ***and neither should you.***
 ### Computer-Aided Manufacturing
 
 - [Bambu Lab P1 series](https://bambulab.com/en/p1)
+- [Prusa Research](https://www.prusa3d.com/)
