@@ -35,11 +35,11 @@ jobs:
       - name: Activate Venv
         run: source venv/bin/activate
       - name: Update Page manifest
-        run: python3 util/pageupdater/page_list_gen.py
+        run: python ./util/pageupdater/page_list_gen.py
       - name: Update Page history
-        run: python3 util/pageupdater/commit_post_history.py
+        run: python ./util/pageupdater/commit_post_history.py
       - name: Generate RSS feed
-        run: python3 util/pageupdater/rss_xml_gen.py
+        run: python ./util/pageupdater/rss_xml_gen.py
       - name: Upload artifacts (assets and public)
         uses: actions/upload-artifact@v4
         with:
