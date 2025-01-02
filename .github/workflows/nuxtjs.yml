@@ -35,7 +35,7 @@ jobs:
       - name: Activate Venv
         run: source venv/bin/activate
       - name: Update Page manifest
-        run: python ./util/pageupdater/page_list_gen.py
+        run: python ./util/pageupdater/page_list_gen.py && ls
       - name: Update Page history
         run: python ./util/pageupdater/commit_post_history.py
       - name: Generate RSS feed
