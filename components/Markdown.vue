@@ -41,6 +41,7 @@ watch(() => props.text, (newVal) => {
     border-bottom: 1px solid #A020F0;
     padding-bottom: 0.25rem;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 /* Markdown alerts get a box, a shadow, and a background+border color */
