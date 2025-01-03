@@ -37,4 +37,5 @@ fetch("/about_me.md")
 	#PFP {
 		box-shadow: 0 0 10px 0 pink;
 	}
+	
 </style>
