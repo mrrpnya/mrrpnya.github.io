@@ -52,6 +52,16 @@
 		<item>
 			<title>Edited article: Awesome</title>
 			<link>https://thefelidae.github.io/blog/?post=public/blog/awesome.md</link>
+			<description>Edited this article: It now sits at 16767 characters and 2343 words
+
+A curated list of awesome stuff I like</description>
+			<guid isPermaLink="false">6af8311103f3fad30ecad55159d7b49dbd29400e50ebb83f9fd53916d8e0470a</guid>
+			<pubDate>Thu, 02 Jan 2025 09:56:22 +0000</pubDate>
+			<category>curated</category>
+		</item>
+		<item>
+			<title>Edited article: Awesome</title>
+			<link>https://thefelidae.github.io/blog/?post=public/blog/awesome.md</link>
 			<description>Edited this article: It now sits at 15304 characters and 2248 words
 
 A curated list of awesome stuff I like</description>
