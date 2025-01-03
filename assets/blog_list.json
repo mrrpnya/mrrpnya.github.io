@@ -1,5 +1,5 @@
 {
-  "last_generated": "2025-01-02 09:56:22",
+  "last_generated": "2025-01-03 20:11:36",
   "posts": [
     {
       "metadata": {
@@ -47,6 +47,20 @@
       "id": "/awesome.md",
       "url": "/blog/awesome.md",
       "hash": "0632400858006b93f2f36d87953538c2a400bacc75aaa29928aee226e8b343b1"
+    },
+    {
+      "metadata": {
+        "title": "LGBTQ+ Resources",
+        "description": "A list of resources for LGBTQ+ individuals",
+        "date": "2025-01-02",
+        "tags": [
+          "lgbtq+",
+          "resources"
+        ]
+      },
+      "id": "/lgbtq_resources.md",
+      "url": "/blog/lgbtq_resources.md",
+      "hash": "1dd63f74b3f74077510f1043cb471ab9c691711545bb6ef1f3d6eff4f6a23c89"
     },
     {
       "metadata": {
