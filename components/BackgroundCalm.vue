@@ -1,11 +1,3 @@
-<script setup lang="ts">
-import { Engine } from '@tsparticles/engine';
-
-const onLoad = (container: Container) => {
-}
-
-</script>
-
 <template>
     <div>
     <NuxtParticles

@@ -4,11 +4,26 @@ import { ref } from 'vue';
 import siteConfig from '../assets/config';
 
 const props = defineProps({
-    title: String,
-    description: String,
-    date: String,
-    tags: Array<String>,
-    background: String
+    title: {
+        type: String,
+        default: 'Untitled'
+    },
+    description: {
+        type: String,
+        default: 'No description provided'
+    },
+    date: {
+        type: String,
+        default: 'No date provided'
+    },
+    tags: {
+        type: Array<String>,
+        default: []
+    },
+    background: {
+        type: String,
+        default: ''
+    }
 });
 
 const tags: Ref<String[]> = ref(props.tags || []);
@@ -39,7 +54,7 @@ useSeoMeta({
     ogSiteName: siteConfig.siteTitle,
     ogLocale: 'en_US',
     ogLocaleAlternate: 'en_GB',
-    themeColor: siteConfig.sitePrimaryColor,
+    themeColor: siteConfig.siteColor,
     twitterCard: 'summary',
     twitterTitle: fullTitle,
     twitterDescription: description,
@@ -54,7 +69,7 @@ useHead({
         { name: 'keywords', content: tagsToString(tags.value) },
         { name: 'author', content: siteConfig.siteAuthor },
         { name: 'date', content: date },
-        { name: 'theme-color', content: siteConfig.sitePrimaryColor },
+        { name: 'theme-color', content: siteConfig.siteColor },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: fullTitle },
         { name: 'twitter:description', content: description },
@@ -72,4 +87,31 @@ useHead({
     ]
 })
 
+watch(() => props.title, (newVal) => {
+    title.value = newVal;
+    fullTitle.value = title.value + ' | ' + siteConfig.siteTitle;
+});
+
+watch(() => props.description, (newVal) => {
+    description.value = newVal;
+});
+
+watch(() => props.date, (newVal) => {
+    date.value = newVal;
+});
+
+watch(() => props.tags, (newVal) => {
+    tags.value = newVal;
+});
+
+watch(() => props.background, (newVal) => {
+    background.value = newVal;
+});
+
 </script>
+
+<template>
+    <div>
+        <slot></slot>
+    </div>
+</template>

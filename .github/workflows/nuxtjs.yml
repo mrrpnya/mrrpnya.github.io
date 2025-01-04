@@ -34,10 +34,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Activate Venv
         run: source venv/bin/activate
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
       - name: Install dependencies
         run: pip install python-frontmatter
-      - name: Update Page manifest
-        run: python utils/pageupdater/page_list_gen.py
+      - name: Update Page list
+        run: deno utils/pageupdater/update_pagelist.ts
       - name: Update Page history
         run: python utils/pageupdater/commit_post_history.py
       - name: Generate RSS feed

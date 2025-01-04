@@ -6,7 +6,7 @@ export default {
     siteImage: '',
 
     // Site personalization
-    sitePrimaryColor: '#550077',
+    siteColor: '#550077',
 
     // Author information
     siteAuthor: 'TheFelidae',

@@ -115,5 +115,5 @@ except FileNotFoundError:
 post_history = generate_post_history(pages_info, state)
 
 # Output to assets/post_history.json (overwriting)
-with open("assets/post_history.json", "w") as f:
+with open("assets/meta/post_history.json", "w") as f:
     f.write(post_history)

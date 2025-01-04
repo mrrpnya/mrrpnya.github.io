@@ -27,6 +27,7 @@
     "nuxt": "^3.14.1592",
     "ofetch": "^1.4.1",
     "postcss-loader": "^8.1.1",
+    "sass-embedded": "^1.83.1",
     "tex-to-svg": "^0.2.0",
     "texsvg": "^2.2.2",
     "tsparticles": "^3.7.1",
@@ -37,7 +38,8 @@
     "@tsparticles/vue3": "^3.0.1",
     "front-matter": "^4.0.2",
     "highlight.js": "^11.10.0",
-    "markdown-it": "^14.1.0"
+    "markdown-it": "^14.1.0",
+    "date-fns": "4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
