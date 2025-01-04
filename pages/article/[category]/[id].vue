@@ -6,6 +6,7 @@ import PostCard from '~/components/PostCard.vue';
 import * as pages from '~/utils/page_updater/update_pagelist';
 import type { PageInfo, PageInfoMetdata } from '~/utils/page_updater/pages';
 import type { ParsedContent } from '@nuxt/content';
+import siteConfig from '~/assets/config';
 
 let route = useRoute()
 console.log(route)
@@ -30,15 +31,22 @@ const background: Ref<string> = ref("")
 const next: Ref<string> = ref("")
 const previous: Ref<string> = ref("")
 
-watch(markdown , (newVal) => {
-    if (newVal) {
-        title.value = newVal.title ? newVal.title : ""
-        description.value = newVal.description ? newVal.description : ""
-        date.value = newVal.date ? new Date(newVal.date).toLocaleDateString() : ""
-        tags.value = newVal.tags ? newVal.tags : []
-        background.value = newVal.background ? newVal.background : ""
+function tagsToString(tags: String[]): string {
+    var tagString = '';
+    for (let i = 0; i < tags.length; i++) {
+        tagString += tags[i];
     }
-})
+
+    return tagString;
+}
+
+function updateMetadata(data: ParsedContent) {
+    title.value = data.title ? data.title : ""
+    description.value = data.description ? data.description : ""
+    date.value = data.date ? new Date(data.date).toLocaleDateString() : ""
+    tags.value = data.tags ? data.tags : []
+    background.value = data.background ? data.background : ""
+}
 
 // watch the params of the route to fetch the data again
 watch(route, async () => {
@@ -58,7 +66,7 @@ watch(route, async () => {
 });
 
 // Fetch the article contents from the URL
-async function fetchArticle(url: string) {
+async function fetchArticle(url: string): Promise<any> {
     if (!url) {
         return
     }
@@ -69,13 +77,17 @@ async function fetchArticle(url: string) {
     console.log(data)
     
     markdown.value = data.value;
+    updateMetadata(markdown.value)
+
+    return data.value
 }
 
 function resetReadingPosition() {
     window.scrollTo(0, 0)
 }
 
-fetchArticle(url.value)
+const data = await fetchArticle(url.value)
+updateMetadata(data)
 
 console.log("Prefetching article")
 onMounted(async () => {
@@ -85,13 +97,55 @@ onMounted(async () => {
 const temp_url = route.query.post as string
 await fetchArticle(temp_url);
 
+const fullTitle = data.title + " | " + siteConfig.siteTitle;
+
+useHead({
+    title: fullTitle,
+    meta: [
+        { name: 'description', content: description },
+        { name: 'keywords', content: tagsToString(tags.value) },
+        { name: 'author', content: siteConfig.siteAuthor },
+        { name: 'date', content: date },
+        { name: 'theme-color', content: siteConfig.siteColor },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: fullTitle },
+        { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: background },
+        { name: 'twitter:image:alt', content: fullTitle },
+        { name: 'og:title', content: fullTitle },
+        { name: 'og:description', content: description },
+        { name: 'og:type', content: 'website' },
+        { name: 'og:url', content: siteConfig.siteUrl },
+        { name: 'og:site_name', content: siteConfig.siteTitle },
+        { name: 'og:locale', content: 'en_US' },
+        { name: 'og:locale:alternate', content: 'en_GB' },
+        { name: 'og:image', content: background },
+        { name: 'og:image:alt', content: fullTitle }
+    ]
+})
+
+useSeoMeta({
+    title: fullTitle,
+    ogTitle: fullTitle,
+    description: description,
+    ogDescription: description,
+    keywords: tagsToString(tags.value),
+    ogImage: background,
+    ogUrl: siteConfig.siteUrl,
+    ogType: 'website',
+    ogSiteName: siteConfig.siteTitle,
+    ogLocale: 'en_US',
+    ogLocaleAlternate: 'en_GB',
+    themeColor: siteConfig.siteColor,
+    twitterCard: 'summary',
+    twitterTitle: fullTitle,
+    twitterDescription: description,
+    twitterImage: background
+});
 </script>
 
 <template>
     <div class="relative z-50 flex w-full justify-center text-white">
-        <!-- Metadata -->
-        <MetaSet :title="title" :description="description" :date="date"
-            :background="background" tags="tags" />
                 <!-- Article Viewer -->
         <div class="mt-8 flex-col text-center">
             <Transition name="list">
