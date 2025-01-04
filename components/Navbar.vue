@@ -9,7 +9,7 @@ import Card from './Card.vue';
             <Card>
                 <div class="flex justify-center">
                     <NuxtLink href="/" class="transition text-xl pl-2 pr-2 ease-in-out text-purple-100 hover:text-purple-400 duration-200">Home</NuxtLink>
-                    <NuxtLink href="/article/" class="transition text-xl pl-2 pr-2 ease-in-out text-purple-100 hover:text-purple-400 duration-200">Blog</NuxtLink>
+                    <NuxtLink href="/article/" class="transition text-xl pl-2 pr-2 ease-in-out text-purple-100 hover:text-purple-400 duration-200">Articles</NuxtLink>
                     <NuxtLink href="/article/blog/awesome.md" class="transition text-xl pl-2 pr-2 ease-in-out text-purple-100 hover:text-purple-400 duration-200">Awesome</NuxtLink>
                     <NuxtLink href="/article/blog/badges.md" class="transition text-xl pl-2 pr-2 ease-in-out text-purple-100 hover:text-purple-400 duration-200">Badges</NuxtLink>
                 </div>

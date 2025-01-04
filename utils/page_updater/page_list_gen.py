@@ -56,5 +56,5 @@ post_list = generate_page_list(pages.get_pages_info("", "assets/blog"));
 print(post_list)
 
 # Output to assets/blog_list.json (overwriting)
-with open("assets/blog_list.json", "w") as f:
+with open("assets/meta/post_list.json", "w") as f:
     f.write(post_list)

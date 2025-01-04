@@ -1,6 +1,6 @@
 import * as pages from '~/utils/page_updater/update_pagelist';
 
-const blog_list: pages.PageList = (await import('./assets/meta/blog_list.json')) as pages.PageList;
+const blog_list: pages.PageList = (await import('./assets/meta/post_list.json')) as pages.PageList;
 
 // nitro only needs string array
 const blog_nitro_routes: any = [];

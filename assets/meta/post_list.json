@@ -1,0 +1,144 @@
+{
+  "last_generated": "2025-01-04 12:04:30",
+  "categories": {
+    "Blog": {
+      "posts": [
+        {
+          "metadata": {
+            "title": "3DS Programming - Using RomFS",
+            "description": "A guide to using RomFS on the 3DS. (Old)",
+            "date": "2024-12-31 16:00:00",
+            "tags": [
+              "3ds",
+              "programming",
+              "c",
+              "devkitpro",
+              "old"
+            ],
+            "previous": "old3ds_helloworld.md",
+            "next": "old3ds_touchscreen.md"
+          },
+          "id": "blog/old3ds_romfs.md",
+          "url": "/blog/old3ds_romfs.md",
+          "hash": "0b28a366868e9fa564b6a33d9b1aa1d8269f7971497f25488f05f54929e88410"
+        },
+        {
+          "metadata": {
+            "title": "3DS Programming - Touchscreen Input",
+            "description": "A guide to using the touchscreen on the 3DS. (Old)",
+            "date": "2024-12-31 16:00:00",
+            "tags": [
+              "3ds",
+              "programming",
+              "c",
+              "devkitpro",
+              "old"
+            ],
+            "previous": "old3ds_romfs.md"
+          },
+          "id": "blog/old3ds_touchscreen.md",
+          "url": "/blog/old3ds_touchscreen.md",
+          "hash": "59e0b9d701646fd5f747713832c47ce451e0ebe0975d4a148a820ca795741c2b"
+        },
+        {
+          "metadata": {
+            "title": "3DS Programming - Hello World",
+            "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",
+            "date": "2024-12-31 16:00:00",
+            "tags": [
+              "3ds",
+              "programming",
+              "c",
+              "devkitpro",
+              "old"
+            ],
+            "next": "old3ds_romfs.md"
+          },
+          "id": "blog/old3ds_helloworld.md",
+          "url": "/blog/old3ds_helloworld.md",
+          "hash": "86e0bd1deae0d00b17ab0960634ea7292d6387063f70600cec4001564fde9514"
+        }
+      ],
+      "title": "Blog",
+      "description": "General blog posts",
+      "tags": [
+        "blog"
+      ]
+    },
+    "Site": {
+      "posts": [
+        {
+          "metadata": {
+            "title": "Styling Test",
+            "description": "A test post to see how the site styling looks",
+            "date": "2024-12-31 16:00:00",
+            "tags": [
+              "meta",
+              "web"
+            ]
+          },
+          "id": "site/styling_test.md",
+          "url": "/site/styling_test.md",
+          "hash": "0ff9f34321a27f462ca26656a1dc5024c0e800ea1e176ff36316b158ab4606c9"
+        }
+      ],
+      "title": "Site",
+      "description": "Articles to test site functionality",
+      "tags": [
+        "site"
+      ]
+    },
+    "Collections": {
+      "posts": [
+        {
+          "metadata": {
+            "title": "LGBTQ+ Resources",
+            "description": "A list of resources for LGBTQ+ individuals",
+            "date": "2025-01-01 16:00:00",
+            "tags": [
+              "lgbtq+",
+              "resources"
+            ]
+          },
+          "id": "collections/lgbtq_resources.md",
+          "url": "/collections/lgbtq_resources.md",
+          "hash": "3da76064aa95cc06937bde01128ed44aafb850f35a43bd214ce0cd89a875c674"
+        },
+        {
+          "metadata": {
+            "title": "Badges!",
+            "description": "A collection of 88x31 badges for various things",
+            "date": "2024-12-20 16:00:00",
+            "tags": [
+              "badges",
+              "retro",
+              "web"
+            ]
+          },
+          "id": "collections/badges.md",
+          "url": "/collections/badges.md",
+          "hash": "338ccfecc6523dff93708330a8b43af715f1e80d55e1cc3bea2d1a7306fc4f00"
+        },
+        {
+          "metadata": {
+            "title": "Awesome",
+            "description": "A curated list of awesome stuff I like",
+            "date": "2024-11-25 16:00:00",
+            "tags": [
+              "awesome",
+              "curated"
+            ]
+          },
+          "id": "collections/awesome.md",
+          "url": "/collections/awesome.md",
+          "hash": "0632400858006b93f2f36d87953538c2a400bacc75aaa29928aee226e8b343b1"
+        }
+      ],
+      "title": "Collections",
+      "description": "Articles that are collections of information: Lists, Awesome lists, etc.",
+      "tags": [
+        "collection"
+      ]
+    }
+  }
+}

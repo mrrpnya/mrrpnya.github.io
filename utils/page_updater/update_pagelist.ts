@@ -54,10 +54,24 @@ function generatePageCategory(pagesInfo: Record<string, any>): PageCategory {
 const postDirectories: pages.PageLocation[] = [
     {
         title: "Blog",
-        description: "A collection of blog posts",
+        description: "General blog posts",
         tags: ["blog"],
         map: "blog",
         root: "content/blog"
+    },
+    {
+        title: "Site",
+        description: "Articles to test site functionality",
+        tags: ["site"],
+        map: "site",
+        root: "content/site"
+    },
+    {
+        title: "Collections",
+        description: "Articles that are collections of information: Lists, Awesome lists, etc.",
+        tags: ["collection"],
+        map: "collections",
+        root: "content/collections"
     }
 ]
 
@@ -69,6 +83,9 @@ var postList: PageList = {
 for (const postDirectory of postDirectories) {
     const pagesInfo = pages.getPagesInfo("", postDirectory);
     postList.categories[postDirectory.title] = generatePageCategory(pagesInfo);
+    postList.categories[postDirectory.title].title = postDirectory.title;
+    postList.categories[postDirectory.title].description = postDirectory.description;
+    postList.categories[postDirectory.title].tags = postDirectory.tags;
 }
 
 // Sort the posts by date
@@ -87,4 +104,4 @@ for (const category of Object.values(postList.categories)) {
 console.log(JSON.stringify(postList, null, 2));
 
 // Output to assets/blog_list.json (overwriting)
-fs.writeFileSync("assets/meta/blog_list.json", JSON.stringify(postList, null, 2));
+fs.writeFileSync("assets/meta/post_list.json", JSON.stringify(postList, null, 2));
