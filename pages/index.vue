@@ -5,6 +5,8 @@ import PostCard from '../components/PostCard.vue';
 import configured_markdown from '~/assets/markdown_conf';
 import Markdown from '~/components/Markdown.vue';
 import Card from '~/components/Card.vue';
+import * as siteConfig from "../assets/config.ts";
+import MetaSet from '~/components/MetaSet.vue';
 
 const aboutMe = ref("");
 
@@ -18,6 +20,8 @@ fetch("/about_me.md")
 </script>
 
 <template>
+	<MetaSet title="Home" description="TheFelidae's personal site :3" tags="home, personal, author"/>
+
 	<div class="relative flex w-full justify-center text-white">
 		<div class="mt-8 flex-col text-center">
 			<div class="flex justify-center">
@@ -37,5 +41,4 @@ fetch("/about_me.md")
 	#PFP {
 		box-shadow: 0 0 10px 0 pink;
 	}
-	
 </style>
