@@ -43,9 +43,9 @@ jobs:
       - name: Update Page list
         run: deno --allow-all utils/page_updater/update_pagelist.ts 
       - name: Update Page history
-        run: python utils/pageupdater/commit_post_history.py
+        run: python utils/page_updater/commit_post_history.py
       - name: Generate RSS feed
-        run: python utils/pageupdater/rss_xml_gen.py
+        run: python utils/page_updater/rss_xml_gen.py
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
 
