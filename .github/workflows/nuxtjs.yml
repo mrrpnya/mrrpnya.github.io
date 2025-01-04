@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: pip install python-frontmatter && deno install
       - name: Update Page list
-        run: deno utils/pageupdater/update_pagelist.ts --allow-all
+        run: deno --allow-all utils/pageupdater/update_pagelist.ts 
       - name: Update Page history
         run: python utils/pageupdater/commit_post_history.py
       - name: Generate RSS feed

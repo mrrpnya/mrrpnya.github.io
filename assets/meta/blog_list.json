@@ -1,11 +1,11 @@
 {
-  "last_generated": "2025-01-04 02:30:21",
+  "last_generated": "2025-01-03 21:53:59",
   "posts": [
     {
       "metadata": {
         "title": "3DS Programming - Using RomFS",
         "description": "A guide to using RomFS on the 3DS. (Old)",
-        "date": "2025-01-01T00:00:00.000Z",
+        "date": "2024-12-31 16:00:00",
         "tags": [
           "3ds",
           "programming",
@@ -24,7 +24,7 @@
       "metadata": {
         "title": "Awesome",
         "description": "A curated list of awesome stuff I like",
-        "date": "2024-11-26T00:00:00.000Z",
+        "date": "2024-11-25 16:00:00",
         "tags": [
           "awesome",
           "curated"
@@ -38,7 +38,7 @@
       "metadata": {
         "title": "Badges!",
         "description": "A collection of 88x31 badges for various things",
-        "date": "2024-12-21T00:00:00.000Z",
+        "date": "2024-12-20 16:00:00",
         "tags": [
           "badges",
           "retro",
@@ -53,7 +53,7 @@
       "metadata": {
         "title": "3DS Programming - Touchscreen Input",
         "description": "A guide to using the touchscreen on the 3DS. (Old)",
-        "date": "2025-01-01T00:00:00.000Z",
+        "date": "2024-12-31 16:00:00",
         "tags": [
           "3ds",
           "programming",
@@ -71,7 +71,7 @@
       "metadata": {
         "title": "Styling Test",
         "description": "A test post to see how the site styling looks",
-        "date": "2025-01-01T00:00:00.000Z",
+        "date": "2024-12-31 16:00:00",
         "tags": [
           "meta",
           "web"
@@ -85,7 +85,7 @@
       "metadata": {
         "title": "LGBTQ+ Resources",
         "description": "A list of resources for LGBTQ+ individuals",
-        "date": "2025-01-02T00:00:00.000Z",
+        "date": "2025-01-01 16:00:00",
         "tags": [
           "lgbtq+",
           "resources"
@@ -99,7 +99,7 @@
       "metadata": {
         "title": "3DS Programming - Hello World",
         "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",
-        "date": "2025-01-01T00:00:00.000Z",
+        "date": "2024-12-31 16:00:00",
         "tags": [
           "3ds",
           "programming",
