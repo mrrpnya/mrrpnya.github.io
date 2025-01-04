@@ -9,115 +9,142 @@
     margin-top: 1rem;
 }
 
-/* Markdown alerts get a box, a shadow, and a background+border color */
-.md-contents .markdown-alert:not(.md-override) {
-    @apply rounded-lg border-highlight border-b-2 shadow-primary shadow-md;
-    background-color: #333;
-    padding: 0.5rem;
-    margin: 1rem 0;
+// reset all alert styles
+.md-contents alert {
+    all: unset;
+    @apply border-2 border-primary shadow-primary shadow-md rounded-md w-fit h-fit p-2 block m-4;
 }
-.md-contents .markdown-alert-title {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-.md-contents .markdown-alert-warning:not(.md-override) {
+
+/* Different alert types get different colors */
+.md-contents alert[type="warning"]:not(.md-override) {
     @apply border-2 border-warning shadow-warning shadow-md;
 }
 
-.md-contents .markdown-alert-warning .markdown-alert-title:not(.md-override):before {
-    content: "⚠️ ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="warning"]:not(.md-override)::before {
+    content: "⚠️ Warning ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-danger:not(.md-override) {
+
+.md-contents alert[type="danger"]:not(.md-override) {
     @apply border-2 border-danger shadow-danger shadow-md;
 }
-.md-contents .markdown-alert-danger .markdown-alert-title:not(.md-override):before {
-    content: "❌ ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="danger"]:not(.md-override)::before {
+    content: "❌ Danger ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-success:not(.md-override) {
+
+.md-contents alert[type="success"]:not(.md-override) {
     @apply border-2 border-success shadow-success shadow-md;
 }
-.md-contents .markdown-alert-success .markdown-alert-title:not(.md-override):before {
-    content: "✅ ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="success"]:not(.md-override)::before {
+    content: "✅ Success ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-info:not(.md-override) {
+
+.md-contents alert[type="info"]:not(.md-override) {
     @apply border-2 border-info shadow-info shadow-md;
 }
-.md-contents .markdown-alert-info .markdown-alert-title:not(.md-override):before {
-    content: "ℹ️ ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="info"]:not(.md-override)::before {
+    content: "ℹ️ Info ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-important:not(.md-override) {
+
+.md-contents alert[type="important"]:not(.md-override) {
     @apply border-2 border-important shadow-important shadow-md;
 }
-.md-contents .markdown-alert-important .markdown-alert-title:not(.md-override):before {
-    content: "❗ ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="important"]:not(.md-override)::before {
+    content: "🔥 Important ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-caution:not(.md-override) {
+
+.md-contents alert[type="caution"]:not(.md-override) {
     @apply border-2 border-warning shadow-warning shadow-md;
 }
-.md-contents .markdown-alert-caution .markdown-alert-title:not(.md-override):before {
-    content: "⚠️ ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="caution"]:not(.md-override)::before {
+    content: "⚠️ Caution ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-note:not(.md-override) {
+
+.md-contents alert[type="note"]:not(.md-override) {
     @apply border-2 border-note shadow-note shadow-md;
 }
-.md-contents .markdown-alert-note .markdown-alert-title:not(.md-override):before {
-    content: "📝 ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="note"]:not(.md-override)::before {
+    content: "📝 Note ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-tip:not(.md-override) {
+
+.md-contents alert[type="tip"]:not(.md-override) {
     @apply border-2 border-tip shadow-tip shadow-md;
 }
-.md-contents .markdown-alert-tip .markdown-alert-title:not(.md-override):before {
-    content: "💡 ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="tip"]:not(.md-override)::before {
+    content: "💡 Tip ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-question:not(.md-override) {
-    @apply border-2 border-note shadow-note shadow-md;
-}
-.md-contents .markdown-alert-question .markdown-alert-title:not(.md-override):before {
-    content: "❓ ";
-    text-shadow: 1px 1px 1px #000;
-}
-.md-contents .markdown-alert-quote:not(.md-override) {
-    @apply border-2 border-note shadow-note shadow-md border-dashed;
-}
-.md-contents .markdown-alert-quote .markdown-alert-title:not(.md-override):before {
-    content: "❝ ";
-    text-shadow: 1px 1px 1px #000;
-}
-.md-contents .markdown-alert-deprecated:not(.md-override) {
+
+.md-contents alert[type="deprecated"]:not(.md-override) {
     @apply border-2 border-danger shadow-danger shadow-md;
 }
-.md-contents .markdown-alert-deprecated .markdown-alert-title:not(.md-override):before {
-    content: "🚫 ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="deprecated"]:not(.md-override)::before {
+    content: "🚫 Deprecated ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-example:not(.md-override) {
+
+.md-contents alert[type="example"]:not(.md-override) {
     @apply border-2 border-info shadow-info shadow-md;
 }
-.md-contents .markdown-alert-example .markdown-alert-title:not(.md-override):before {
-    content: "💡 ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="example"]:not(.md-override)::before {
+    content: "💡 Example ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-todo:not(.md-override) {
+
+.md-contents alert[type="todo"]:not(.md-override) {
     @apply border-2 border-warning shadow-warning shadow-md;
 }
-.md-contents .markdown-alert-todo .markdown-alert-title:not(.md-override):before {
-    content: "📝 ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="todo"]:not(.md-override)::before {
+    content: "📝 Todo ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
-.md-contents .markdown-alert-done:not(.md-override) {
+
+.md-contents alert[type="done"]:not(.md-override) {
     @apply border-2 border-success shadow-success shadow-md;
 }
-.md-contents .markdown-alert-done .markdown-alert-title:not(.md-override):before {
-    content: "✅ ";
-    text-shadow: 1px 1px 1px #000;
+
+.md-contents alert[type="done"]:not(.md-override)::before {
+    content: "✅ Done ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
+}
+
+.md-contents alert[type="quote"]:not(.md-override) {
+    @apply border-2 border-note shadow-note shadow-md border-dashed;
+}
+
+.md-contents alert[type="quote"]:not(.md-override)::before {
+    content: "🗨️ Quote ";
+    margin-right: 0.5rem;
+    text-shadow: 0 0 7px black;
 }
 
 /* Footnotes, ensure they are by default white with no transition if they have no href */

@@ -101,7 +101,7 @@ def generate_post_history(pages_info, state):
     return post_history_json
     
 # Get the pages info from the public/blog directory
-pages_info = pages.get_pages_info("", "public/blog")
+pages_info = pages.get_pages_info("", "assets/blog")
 
 # Load the previous state from the assets/post_history.json file
 try:

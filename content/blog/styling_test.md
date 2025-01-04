@@ -134,9 +134,6 @@ $$
 
 ### Alerts
 
-> [!warning]
-> This is a warning alert.
-
 > [!info]
 > This is an info alert.
 
@@ -175,6 +172,48 @@ $$
 
 > [!done]
 > This is a done alert.
+
+<!-- new vers-->
+> ::alert{type="warning"}
+> The **alert** component - Warning
+> ::
+>
+> ::alert{type="danger"}
+> The **alert** component - Danger
+> ::
+>
+> ::alert{type="info"}
+> The **alert** component - Info
+> ::
+>
+> ::alert{type="success"}
+> The **alert** component - Success
+> ::
+>
+> ::alert{type="example"}
+> The **alert** component - Example
+> ::
+>
+> ::alert{type="note"}
+> The **alert** component - Note
+> ::
+>
+> ::alert{type="tip"}
+> The **alert** component - Tip
+> ::
+>
+> ::alert{type="important"}
+> The **alert** component - Important
+> ::
+>
+> ::alert{type="caution"}
+> The **alert** component - Caution
+> ::
+>
+> ::alert{type="quote"}
+> The **alert** component - Quote
+> ::
+
 
 ### Iframes
 

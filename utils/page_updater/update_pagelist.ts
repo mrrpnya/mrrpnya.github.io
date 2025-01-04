@@ -23,7 +23,7 @@ function generatePageList(pagesInfo: Record<string, any>): PageList {
         const pageDict: Page = {
             metadata: page.metadata,
             id: page.local_path,
-            url: page.absolute_path.replace("public", ""),
+            url: page.absolute_path.replace("assets", ""),
             hash: page.hash
         };
         pageList.push(pageDict);
@@ -44,7 +44,7 @@ function generatePageList(pagesInfo: Record<string, any>): PageList {
 }
 
 // Get the page list and print it
-const postList = generatePageList(pages.getPagesInfo("", "public/blog"));
+const postList = generatePageList(pages.getPagesInfo("", "assets/blog"));
 console.log(JSON.stringify(postList, null, 2));
 
 // Output to assets/blog_list.json (overwriting)

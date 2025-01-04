@@ -59,7 +59,6 @@ useSeoMeta({
     twitterTitle: fullTitle,
     twitterDescription: description,
     twitterImage: background
-    
 });
 
 useHead({
@@ -86,6 +85,15 @@ useHead({
         { name: 'og:image:alt', content: fullTitle }
     ]
 })
+
+definePageMeta({
+    title: fullTitle,
+    description: description,
+    "og:title": fullTitle,
+    "og:description": description,
+    "og:image": background,
+    "og:url": siteConfig.siteUrl,
+});
 
 watch(() => props.title, (newVal) => {
     title.value = newVal;

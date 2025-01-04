@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { ref, watch } from 'vue';
 import fm from 'front-matter';
 import { auto } from '@popperjs/core';
 
 const props = defineProps({
     url: String,
-    tagFilter: Array,
+    tagFilter: Array<String>,
     // Allow sm, md, and lg
     size: {
         type: String,
@@ -14,49 +14,59 @@ const props = defineProps({
     }
 });
 
-const url = ref(props.url)
-url.value = props.url
+const url: Ref<string> = ref("")
+url.value = props.url as string
+
 const loading = ref(false)
-const data = ref(null)
-const error = ref(null)
+const error: Ref<string | null> = ref(null)
+const markdown: Ref<any> = ref(null)
 
-const background = ref('');
-const title = ref(null);
-const description = ref(null);
-const date = ref(null);
-const tags = ref(null);
+const background: Ref<string> = ref('');
+const title: Ref<string> = ref("Untitled");
+const description: Ref<string | null> = ref(null);
+const date: Ref<string | null> = ref(null);
+const tags: Ref<string | null> = ref(null);
 
+watch(url, (newVal) => {
+    fetchData(newVal)
+}, { immediate: true })
 
-// watch the params of the route to fetch the data again
-watch(url, async () => {
-    await fetchData()
-}, {
-    immediate: true 
-});
+watch(markdown, (newVal) => {
+    if (newVal) {
+        title.value = newVal.title ? newVal.title : ""
+        description.value = newVal.description ? newVal.description : ""
+        date.value = newVal.date ? new Date(newVal.date).toLocaleDateString() : ""
+        tags.value = newVal.tags ? newVal.tags : []
+        background.value = newVal.background ? newVal.background : ""
 
-async function fetchData() {
-    error.value = data.value = null
+        console.log("Title: " + title.value)
+        console.log("Description: " + description.value)
+        console.log("Date: " + date.value)
+        console.log("Tags: " + tags.value)
+        console.log("Background: " + background.value)
+    }
+})
+
+async function fetchData(url: string) {
     loading.value = true
-    
+    // remove all .md extensions
+    const temp_url = url.replace(/\.md$/, '')
+    console.log("Fetching article: " + temp_url)
     try {
-        data.value = await (await fetch(url.value)).text()
-        console.log(url.value)
-        const processed = fm(data.value)
-        background.value = processed.attributes.background
-        title.value = processed.attributes.title
-        description.value = processed.attributes.description
-        console.log(JSON.stringify(processed.attributes.date))
-        date.value = processed.attributes.date
-        tags.value = processed.attributes.tags
+        const {data} = await useAsyncData(temp_url, () => queryContent(temp_url).findOne())
 
-        date.value = new Date(date.value).toLocaleDateString()
-    } catch (err) {
+        markdown.value = data.value;
+    } catch (err: any) {
         error.value = err.toString()
         loading.value = false
     } finally {
         loading.value = false
     }
 }
+
+onMounted(() => {
+    fetchData(url.value)
+})
 </script>
 
 <template>
@@ -79,7 +89,7 @@ async function fetchData() {
                             </div>
                             <div class="flex justify-center">
                                 <div v-for="tag in tags" :key="tag" class="m-1 text-center">
-                                    <div v-if="props.tagFilter.includes(tag)">
+                                    <div v-if="props.tagFilter?.includes(tag)">
                                         <span class="text-xs bg-slate-700 border-white border-2 text-white p-1 rounded-md">{{ tag }}</span>
                                     </div>
                                     <div v-else>
@@ -111,13 +121,13 @@ async function fetchData() {
                             </div>
                             <div class="flex justify-center">
                                 <div v-for="tag in tags" :key="tag" class="m-1 text-center">
-                                    <div v-if="props.tagFilter.includes(tag)">
+                                    <div v-if="props.tagFilter?.includes(tag)">
                                         <span class="text-xs bg-slate-700 border-white border-2 text-white p-1 rounded-md">{{ tag }}</span>
                                     </div>
                                     <div v-else>
                             <div class="flex justify-center">
                                 <div v-for="tag in tags" :key="tag" class="m-1 text-center">
-                                    <div v-if="props.tagFilter.includes(tag)">
+                                    <div v-if="props.tagFilter?.includes(tag)">
                                         <span class="text-xs bg-slate-700 border-white border-2 text-white p-1 rounded-md">{{ tag }}</span>
                                     </div>
                                     <div v-else>

@@ -3,7 +3,6 @@
     <NuxtParticles
             class="w-full h-full z-0"
             id="tsparticles"
-            @load="onLoad"
             :particlesInit="particlesInit"
             :options="{
                     fullScreen: {

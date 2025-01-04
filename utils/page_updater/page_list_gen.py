@@ -52,7 +52,7 @@ def generate_page_list(pages_info):
     return page_list_json
 
 # Print the page list
-post_list = generate_page_list(pages.get_pages_info("", "public/blog"));
+post_list = generate_page_list(pages.get_pages_info("", "assets/blog"));
 print(post_list)
 
 # Output to assets/blog_list.json (overwriting)

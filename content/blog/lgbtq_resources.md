@@ -13,15 +13,9 @@ tags: ['lgbtq+', 'resources']
 }
 </style>
 
-> [!important]
-> If you are in severe crisis or thinking about doing *that*, please contact the Trevor Project or Trans Lifeline.
-> The Trevor Project can be contacted through [the site](https://www.thetrevorproject.org/), or by calling `1-866-488-7386`.
-> Trans Lifeline can be contacted via these phone numbers:
-> - `877-565-8860` in the US
-> - `877-330-6366` in Canada
-
-> [!note]
-> I will try not to provide medical advice, for I am not a doctor. Please consult a medical professional for any medical advice.
+::alert{type="note"}
+I will try not to provide medical advice, for I am not a doctor. Please consult a medical professional for any medical advice.
+::
 
 If you find that this list is lacking or inaccurate, please open a GitHub issue or pull request.
 
