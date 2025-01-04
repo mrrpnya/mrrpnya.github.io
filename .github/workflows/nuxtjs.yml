@@ -42,8 +42,8 @@ jobs:
         run: pip install python-frontmatter && deno install
       - name: Update Page list
         run: deno --allow-all utils/page_updater/update_pagelist.ts 
-      - name: Update Page history
-        run: python utils/page_updater/commit_post_history.py
+    #  - name: Update Page history
+    #    run: python utils/page_updater/commit_post_history.py
     #  - name: Generate RSS feed
      #   run: python utils/page_updater/rss_xml_gen.py
       - name: Commit changes

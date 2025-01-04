@@ -13,7 +13,7 @@ const { data } = await useAsyncData('about_me', () => queryContent('/about_me').
 <template>
 	<div class="relative flex w-full justify-center text-white">
 		<!-- Metadata -->
-		<MetaSet title="TheFelidae" description="TheFelidae's personal site :3" background="https://avatars.githubusercontent.com/u/94077364?v=4"
+		<MetaSet title="Home" description="TheFelidae's personal site" background="https://avatars.githubusercontent.com/u/94077364?v=4"
 			tags="home, personal, author" />
 		<div class="mt-8 flex-col text-center">
 			<div class="flex justify-center">

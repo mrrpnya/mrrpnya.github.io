@@ -3,6 +3,14 @@ import * as path from 'node:path';
 import * as crypto from 'node:crypto';
 import fm, { type FrontMatterResult } from 'front-matter';
 
+export interface PageLocation {
+    title: string;
+    description: string;
+    tags: string[];
+    map: string;
+    root: string;
+}
+
 export interface PageInfoMetdata {
     title?: string;
     description?: string;
@@ -22,6 +30,13 @@ export interface PageInfo {
     char_count: number;
     word_count: number;
     path: string;
+}
+
+export interface PageInfoCategory {
+    posts: PageInfo[];
+    title: string;
+    description: string;
+    tags: string[];
 }
 
 // Function to get metadata from a file
@@ -51,17 +66,19 @@ function getWordCount(filePath: string): number {
 }
 
 // Function to get pages info
-export function getPagesInfo(searchDirectory: string, rootDirectory: string): Record<string, PageInfo> {
+export function getPagesInfo(searchDirectory: string, pageLocation: PageLocation): Record<string, PageInfo> {
     const pageInfo: Record<string, PageInfo> = {};
-    const currentDirectory = path.join(rootDirectory, searchDirectory);
+    const currentDirectory = path.join(pageLocation.root, searchDirectory);
     const files = fs.readdirSync(currentDirectory);
+    console.log(files);
 
     files.forEach((file) => {
         const fullPath = path.join(currentDirectory, file);
-        const localPath = fullPath.replace(rootDirectory, '');
-
+        const localPath = fullPath.replace(pageLocation.root, pageLocation.map);
+        console.log(fullPath);
+        console.log(localPath);
         if (fs.lstatSync(fullPath).isDirectory()) {
-            Object.assign(pageInfo, getPagesInfo(path.join(searchDirectory, file), rootDirectory));
+            Object.assign(pageInfo, getPagesInfo(path.join(searchDirectory, file), pageLocation));
         } else if (file.endsWith('.md')) {
             const metadata = getMetadata(fullPath);
             const sha256Hash = getSha256Hash(fullPath);

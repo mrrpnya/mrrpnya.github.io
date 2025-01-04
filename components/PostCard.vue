@@ -70,7 +70,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <NuxtLink :href="'/blog?post=' +url">
+    <NuxtLink :href="'/article' + url">
         <!-- Large -->
         <div v-if = "size === 'full'">
             <div class="m-4 min-h-30 min-width-90 text-white transition hover:bg-purple-600 bg-opacity-50 hover:bg-opacity-70">

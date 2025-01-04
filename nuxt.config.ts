@@ -2,27 +2,20 @@ import * as pages from '~/utils/page_updater/update_pagelist';
 
 const blog_list: pages.PageList = (await import('./assets/meta/blog_list.json')) as pages.PageList;
 
-const blog_routes: any = blog_list.posts.map((post) => {
-  return {
-    ['/blog?post=' + post.id]: {
-      prerender: true
-    }
+// nitro only needs string array
+const blog_nitro_routes: any = [];
+// key value
+for (let [key, category] of Object.entries(blog_list.categories)) {
+  for (let post of category.posts) {
+    blog_nitro_routes.push('/article' + post.url);
   }
-});
-
-blog_routes.push({
-  '/blog': {
-    prerender: true
-  }
-});
-
-console.log(blog_routes);
+}
+console.log(blog_nitro_routes);
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   ssr: true,
-  routeRules: blog_routes,
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -42,6 +35,11 @@ export default defineNuxtConfig({
   content: {
     // ... options
     
+  },
+  nitro: {
+    prerender: {
+      routes: blog_nitro_routes
+    }
   },
   particles: {
     mode: 'slim',
