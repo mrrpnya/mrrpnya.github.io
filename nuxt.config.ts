@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: blog_nitro_routes,
-      autoSubfolderIndex: false
+      autoSubfolderIndex: true
     }
   },
   particles: {
