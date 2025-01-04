@@ -1,5 +1,5 @@
 import * as fs from 'node:fs';
-import * as pages from './pages';
+import * as pages from './pages.ts';
 import { format } from 'date-fns';
 
 // Type for metadata and page info
