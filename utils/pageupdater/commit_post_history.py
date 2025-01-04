@@ -105,7 +105,7 @@ pages_info = pages.get_pages_info("", "public/blog")
 
 # Load the previous state from the assets/post_history.json file
 try:
-    with open("assets/post_history.json", "r") as f:
+    with open("assets/meta/post_history.json", "r") as f:
         state = f.read()
 except FileNotFoundError:
     state = "{\"post_history\": []}"

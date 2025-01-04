@@ -1,7 +1,7 @@
 export default {
     // Site information
-    siteTitle: 'My Site',
-    siteDescription: 'My site description',
+    siteTitle: 'TheFelidae',
+    siteDescription: 'TheFelidae\'s site and rambling ground',
     siteUrl: 'https://thefelidae.github.io',
     siteImage: '',
 
