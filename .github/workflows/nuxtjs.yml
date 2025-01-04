@@ -39,7 +39,7 @@ jobs:
         with:
           deno-version: v2.x
       - name: Install dependencies
-        run: pip install python-frontmatter
+        run: pip install python-frontmatter && deno install
       - name: Update Page list
         run: deno utils/pageupdater/update_pagelist.ts
       - name: Update Page history
