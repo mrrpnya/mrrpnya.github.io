@@ -84,7 +84,7 @@ def history_to_rss(history):
     return minidom.parseString(ET.tostring(root)).toprettyxml()
 
 # Print the RSS XML string from assets/post_history.json
-post_history = open("assets/post_history.json", "r").read()
+post_history = open("assets/meta/post_history.json", "r").read()
 
 rss_xml = history_to_rss(post_history)
 print(rss_xml)
