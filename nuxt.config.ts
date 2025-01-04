@@ -22,6 +22,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  routeRules: {
+    '/article/:category:/:id': {
+      redirect: '/article/:category:/:id/index.html'
+    }
+  },
   app: {
     pageTransition: {
       name: 'page',
@@ -38,7 +43,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: blog_nitro_routes
+      routes: blog_nitro_routes,
+      autoSubfolderIndex: false
     }
   },
   particles: {

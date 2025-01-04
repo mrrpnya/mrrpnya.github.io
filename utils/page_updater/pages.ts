@@ -73,17 +73,22 @@ export function getPagesInfo(searchDirectory: string, pageLocation: PageLocation
     console.log(files);
 
     files.forEach((file) => {
-        const fullPath = path.join(currentDirectory, file);
-        const localPath = fullPath.replace(pageLocation.root, pageLocation.map);
+        var fullPath = path.join(currentDirectory, file);
+        var localPath = fullPath.replace(pageLocation.root, pageLocation.map);
         console.log(fullPath);
         console.log(localPath);
         if (fs.lstatSync(fullPath).isDirectory()) {
             Object.assign(pageInfo, getPagesInfo(path.join(searchDirectory, file), pageLocation));
         } else if (file.endsWith('.md')) {
+
             const metadata = getMetadata(fullPath);
             const sha256Hash = getSha256Hash(fullPath);
             const charCount = getCharCount(fullPath);
             const wordCount = getWordCount(fullPath);
+
+            // Remove the .md extension
+            localPath = localPath.replace('.md', '');
+            fullPath = fullPath.replace('.md', '');
 
             pageInfo[fullPath] = {
                 local_path: localPath,

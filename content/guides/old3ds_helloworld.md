@@ -8,11 +8,12 @@ next: old3ds_romfs.md
 
 # Hello, World!
 
-> [!warning]
-> This guide of mine is old - Like 3 years old at the time of posting. I prefer to keep it up, but I don't think it very highly - It should still work though.
-> I might make a new one in the future.
-> I'm doing some alterations at least to make it more readable.
-> It doesn't teach why things are done very well is my primary issue with it.
+::alert{type="warning"}
+This guide of mine is old - Like 3 years old at the time of posting. I prefer to keep it up, but I don't think it very highly - It should still work though.
+I might make a new one in the future.
+I'm doing some alterations at least to make it more readable.
+It doesn't teach why things are done very well is my primary issue with it.
+::
 
 'Hello, World!' is a very simple program used for checking a program's build system, and showing its basic syntax.
 We should do both before going forward. You should have your project set up for this.

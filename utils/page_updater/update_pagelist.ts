@@ -53,13 +53,6 @@ function generatePageCategory(pagesInfo: Record<string, any>): PageCategory {
 
 const postDirectories: pages.PageLocation[] = [
     {
-        title: "Blog",
-        description: "General blog posts",
-        tags: ["blog"],
-        map: "blog",
-        root: "content/blog"
-    },
-    {
         title: "Site",
         description: "Articles to test site functionality",
         tags: ["site"],
@@ -72,6 +65,13 @@ const postDirectories: pages.PageLocation[] = [
         tags: ["collection"],
         map: "collections",
         root: "content/collections"
+    },
+    {
+        title: "Guides",
+        description: "Guides and tutorials",
+        tags: ["guide"],
+        map: "guides",
+        root: "content/guides"
     }
 ]
 

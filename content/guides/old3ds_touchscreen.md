@@ -8,11 +8,12 @@ previous: old3ds_romfs.md
 
 # Touchscreen Input
 
-> [!warning]
-> This guide of mine is old - Like 3 years old at the time of posting. I prefer to keep it up, but I don't think it very highly - It should still work though.
-> I might make a new one in the future.
-> I'm doing some alterations at least to make it more readable.
-> It doesn't teach why things are done very well is my primary issue with it.
+::alert{type="warning"}
+This guide of mine is old - Like 3 years old at the time of posting. I prefer to keep it up, but I don't think it very highly - It should still work though.
+I might make a new one in the future.
+I'm doing some alterations at least to make it more readable.
+It doesn't teach why things are done very well is my primary issue with it.
+::
 
 Here we will find the position of a touch on the touchscreen.
 
