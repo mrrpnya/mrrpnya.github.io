@@ -27,29 +27,49 @@ function tagsToString(tags: String[]): string {
     return tagString;
 }
 
+useSeoMeta({
+    title: fullTitle,
+    ogTitle: fullTitle,
+    description: description,
+    ogDescription: description,
+    keywords: tagsToString(tags.value),
+    ogImage: background,
+    ogUrl: siteConfig.siteUrl,
+    ogType: 'website',
+    ogSiteName: siteConfig.siteTitle,
+    ogLocale: 'en_US',
+    ogLocaleAlternate: 'en_GB',
+    themeColor: siteConfig.sitePrimaryColor,
+    twitterCard: 'summary',
+    twitterTitle: fullTitle,
+    twitterDescription: description,
+    twitterImage: background
+    
+});
+
+useHead({
+    title: fullTitle,
+    meta: [
+        { name: 'description', content: description },
+        { name: 'keywords', content: tagsToString(tags.value) },
+        { name: 'author', content: siteConfig.siteAuthor },
+        { name: 'date', content: date },
+        { name: 'theme-color', content: siteConfig.sitePrimaryColor },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: fullTitle },
+        { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: background },
+        { name: 'twitter:image:alt', content: fullTitle },
+        { name: 'og:title', content: fullTitle },
+        { name: 'og:description', content: description },
+        { name: 'og:type', content: 'website' },
+        { name: 'og:url', content: siteConfig.siteUrl },
+        { name: 'og:site_name', content: siteConfig.siteTitle },
+        { name: 'og:locale', content: 'en_US' },
+        { name: 'og:locale:alternate', content: 'en_GB' },
+        { name: 'og:image', content: background },
+        { name: 'og:image:alt', content: fullTitle }
+    ]
+})
+
 </script>
-
-<template>
-	<title>{{ fullTitle }}</title>
-	<meta name="description" :content="description" />
-    <meta name="keywords" :content="tagsToString(tags)" />
-	<meta name="author" :content="siteConfig.siteAuthor" />
-	<meta name="url" :content="siteConfig.siteUrl" />
-	<meta name="og:title" :content="title + ' | ' + siteConfig.siteTitle" />
-	<meta name="og:description" :content="siteConfig.siteAuthor + '\'s personal site'" />
-	<meta name="og:url" :content="siteConfig.siteUrl" />
-    <div v-if="background">
-        <meta name="og:image" :content="background" />
-    </div>
-	<meta name="og:type" content="website" />
-	<meta name="og:site_name" :content="siteConfig.siteTitle" />
-	<meta name="og:locale" content="en_US" />
-	<meta name="og:locale:alternate" content="en_GB" />
-	<meta name="theme-color" :content="siteConfig.sitePrimaryColor" />
-
-    <!-- Boo, Twitter. -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" :content="fullTitle" />
-    <meta name="twitter:description" :content="description" />
-    <meta name="twitter:image" :content="background" />
-</template>
