@@ -117,10 +117,12 @@ onMounted(() => {
                             Object.values(article_list.categories)
                                 .map((category) => category.posts)
                                 .flat()
+                                .sort((a, b) => new Date(b.metadata.date ?? 0).getTime() - new Date(a.metadata.date ?? 0).getTime())
                             : Object.values(article_list.categories)
                                 .map((category) => category.posts)
                                 .flat()
                                 .filter((post) => post.metadata.tags ? post.metadata.tags.some((tag) => tagFilter.includes(tag)) : true)
+                                .sort((a, b) => new Date(b.metadata.date ?? 0).getTime() - new Date(a.metadata.date ?? 0).getTime())
                                 ">
                             <PostCard class="lg:w-[48rem]" :url="post.url" :key="post.id" :tagFilter="tagFilter" />
                         </div>

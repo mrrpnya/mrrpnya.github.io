@@ -24,14 +24,6 @@ prop: true
 
 ###### 🏳️‍⚧️ I am exploring identity, so this may change or I might go by different things elsewhere.
 
-###### Regardless, try to respect this or else. I'm not here to debate my existence.
-
-<div style="color: pink">
-
-*Queer rights are human rights.*
-
-</div>
-
 ---
 
 <div style="justify-content: center; display: flex; align-items: center;">
