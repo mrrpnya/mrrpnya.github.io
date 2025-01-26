@@ -2,7 +2,7 @@
 title: LGBTQ+ Resources
 description: A list of resources for LGBTQ+ individuals
 date: 2025-01-02
-tags: ['lgbtq+', 'resources']
+tags: ['lgbtq', 'resources']
 ---
 
 # LGBTQ+ Resources 

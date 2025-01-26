@@ -1,0 +1,23 @@
+name: Publish to OCI
+
+on:
+  push:
+    branches:
+      - gold
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository 
+        uses: actions/checkout@v4
+      - name: Set repository name to lowercase
+        run: echo "REPO_NAME=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+
+      - name: Authenticate with registry
+        run: docker login git.smgames.club -u ${{ github.repository_owner }} -p ${{ secrets.DOCKER_TOKEN }}
+        
+      - name: Build Docker container
+        run: docker build --no-cache --progress=plain -t git.smgames.club/${{ env.REPO_NAME }}:latest .
+
+      - name: Push Docker container
+        run: docker push git.smgames.club/${{ env.REPO_NAME }}:latest

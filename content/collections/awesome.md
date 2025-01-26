@@ -20,6 +20,7 @@ Inspired by [Awesome](https://github.com/sindresorhus/awesome), this is a dumpin
 > [!info]
 > This is going to be long, and will probably be getting a lot of updates.
 > I intend to just keep adding to this.
+> This is meant to be kind of a miscellaneous collection of stuff - For more specific things, see other collections.
 
 ## Table of Contents
 

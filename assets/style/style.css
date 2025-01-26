@@ -163,3 +163,7 @@ color: #75715e;
 .hljs-selector-id {
 font-weight: bold;
 }
+
+.card {
+    @apply shadow-sm shadow-border-accent;
+}
