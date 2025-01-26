@@ -273,5 +273,5 @@ Hosted
 
 /* Images get a border and a shadow */
 .md-contents img:not(.md-override) {
-    @apply border-2 border-image shadow-image shadow-sm m-1;
+    @apply shadow-image shadow-sm m-1;
 }

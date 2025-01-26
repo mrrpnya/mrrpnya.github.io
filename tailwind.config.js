@@ -28,9 +28,13 @@ export default {
         'sm': '0px 0px 2px 2px'
       },
       colors: {
+        "surface-1": "#222222",
+        "surface-2": "#444444",
+        "border": "#441196",
+        "border-accent": "#ff00f2",
         "primary": "#441196",
         "secondary": "#4d0099",
-        "highlight": "#b805ff",
+        "highlight": "#ff00f2",
         "success": "#10B981",
         "danger": "#EF4444",
         "warning": "#F59E0B",
