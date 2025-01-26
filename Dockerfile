@@ -1,16 +1,16 @@
-FROM denoland/deno:latest
+FROM node:latest
 
 WORKDIR /app
 
 # Copy the package.json and install dependencies
 COPY package*.json ./
-RUN deno i
+RUN npm install
 
 # Copy the rest of the application
 COPY . .
 
 # Run build task
-RUN deno task build
+RUN npm run build
 
 # Expose port 80 for the application
 EXPOSE 3000
@@ -20,4 +20,4 @@ ENV NITRO_PORT 3000
 RUN ls -la .output/server/
 
 # Run the Deno server
-CMD deno run --allow-all .output/server/index.mjs
+CMD node .output/server/index.mjs
