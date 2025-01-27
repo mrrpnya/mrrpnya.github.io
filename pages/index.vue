@@ -14,12 +14,12 @@ const { data } = await useAsyncData('about_me', () => queryContent('/about_me').
 	<div class="relative flex w-full justify-center text-white">
 		<!-- Metadata -->
 		<MetaSet title="Home" description="TheFelidae's personal site"
-			background="/me.png" tags="home, personal, author" />
+			background="/images/me.png" tags="home, personal, author" />
 		<div class="mt-8 flex-col text-center">
 			<div class="flex justify-center">
 				<div id="PFP" class="shadow-md rounded-full shadow-highlight">
 					<img class="transition-all w-40 h-40 md:w-56 md:h-56 rounded-full"
-						src="/me.png" alt="User PFP" />
+						src="/images/me.png" alt="User PFP" />
 				</div>
 
 			</div>
