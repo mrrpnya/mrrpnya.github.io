@@ -52,7 +52,7 @@ onMounted(() => {
     <div class="relative z-50 flex w-full justify-center text-white">
         <!-- Metadata -->
         <MetaSet title="Articles" description="Ramblings."
-            background="https://avatars.githubusercontent.com/u/94077364?v=4" tags="blog, personal, author" />
+            background="/me.png" tags="blog, personal, author" />
 
         <!-- Main Content -->
         <div class="mt-8 flex-col text-center">
