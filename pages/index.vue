@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import Markdown from '~/components/Markdown.vue';
 import Card from '~/components/Card.vue';
+import siteTitle from '../assets/config'
 
 const aboutMe = ref('');
 const test = ref('');
@@ -13,7 +14,7 @@ const { data } = await useAsyncData('about_me', () => queryContent('/about_me').
 <template>
 	<div class="relative flex w-full justify-center text-white">
 		<!-- Metadata -->
-		<MetaSet title="Home" description="TheFelidae's personal site"
+		<MetaSet title="Home" :description="siteTitle"
 			background="/images/me.png" tags="home, personal, author" />
 		<div class="mt-8 flex-col text-center">
 			<div class="flex justify-center">
@@ -25,7 +26,7 @@ const { data } = await useAsyncData('about_me', () => queryContent('/about_me').
 			</div>
 			<div class="flex justify-center p-4">
 				<div class="card flex lg:max-w-96 justify-end bg-surface-1 rounded-full border-border border">
-					<NuxtLink href="https://github.com/TheFelidae">
+					<NuxtLink href="https://github.com/mrrpnya">
 						<button title="GitHub Profile"
 							class="m-2 p-2 bg-surface-2/[.5] border-2 border-border rounded-full shadow-sm hover:scale-110 hover:shadow-border-accent hover:border-accent transition-all duration-200 ease-in-out">
 							<img class="invert w-5"

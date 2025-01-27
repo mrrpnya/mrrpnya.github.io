@@ -3,7 +3,7 @@
 	<channel>
 		<item>
 			<title>New article: 3DS Programming - Using RomFS</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/old3ds_romfs.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/old3ds_romfs.md</link>
 			<description>A guide to using RomFS on the 3DS. (Old)</description>
 			<guid isPermaLink="false">3dc790d059da58230427fcccdcfc0483a39929a2a2bb9cc4f35246922f152a32</guid>
 			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
@@ -11,7 +11,7 @@
 		</item>
 		<item>
 			<title>New article: Awesome</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/awesome.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/awesome.md</link>
 			<description>A curated list of awesome stuff I like</description>
 			<guid isPermaLink="false">34933dd967a0a0a0f611b516d7981c754f8783d7cce8d92072f8a7ca29431702</guid>
 			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
@@ -19,7 +19,7 @@
 		</item>
 		<item>
 			<title>New article: Badges!</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/badges.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/badges.md</link>
 			<description>A collection of 88x31 badges for various things</description>
 			<guid isPermaLink="false">6b53b7b4a8329c8aae5cedf363fc94ff1f7bdcfb5332875533fa87e7b6615739</guid>
 			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
@@ -27,7 +27,7 @@
 		</item>
 		<item>
 			<title>New article: 3DS Programming - Touchscreen Input</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/old3ds_touchscreen.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/old3ds_touchscreen.md</link>
 			<description>A guide to using the touchscreen on the 3DS. (Old)</description>
 			<guid isPermaLink="false">712d7be25e1116afae7d9d061fb92a379321ee9fde72d3e75df6b28868f80412</guid>
 			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
@@ -35,7 +35,7 @@
 		</item>
 		<item>
 			<title>New article: Styling Test</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/styling_test.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/styling_test.md</link>
 			<description>A test post to see how the site styling looks</description>
 			<guid isPermaLink="false">ee2a5607213fbfb05235997c7e6b974499dd7f2a51cce02b0305e135aa5783c1</guid>
 			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
@@ -43,7 +43,7 @@
 		</item>
 		<item>
 			<title>New article: 3DS Programming - Hello World</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/old3ds_helloworld.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/old3ds_helloworld.md</link>
 			<description>A guide to creating a simple Hello, World program for the 3DS. (Old)</description>
 			<guid isPermaLink="false">6e59d68eb4eb8144b1185b018b7ca29076d0510d78a5277838b48174d6bc8b2e</guid>
 			<pubDate>Wed, 01 Jan 2025 20:51:01 +0000</pubDate>
@@ -51,7 +51,7 @@
 		</item>
 		<item>
 			<title>Edited article: Awesome</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/awesome.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/awesome.md</link>
 			<description>Edited this article: It now sits at 16767 characters and 2343 words
 
 A curated list of awesome stuff I like</description>
@@ -61,7 +61,7 @@ A curated list of awesome stuff I like</description>
 		</item>
 		<item>
 			<title>Edited article: Awesome</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/awesome.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/awesome.md</link>
 			<description>Edited this article: It now sits at 15304 characters and 2248 words
 
 A curated list of awesome stuff I like</description>
@@ -71,14 +71,14 @@ A curated list of awesome stuff I like</description>
 		</item>
 		<item>
 			<title>New article: LGBTQ+ Resources</title>
-			<link>https://thefelidae.github.io/blog/?post=public/blog/lgbtq_resources.md</link>
+			<link>https://mrrpnya.github.io/blog/?post=public/blog/lgbtq_resources.md</link>
 			<description>A list of resources for LGBTQ+ individuals</description>
 			<guid isPermaLink="false">7ba138c4206df8f36c63a248842dc088e26db92a02c17af8f95c4f6b6e133236</guid>
 			<pubDate>Fri, 03 Jan 2025 20:11:36 +0000</pubDate>
 			<category>resources</category>
 		</item>
-		<title>TheFelidae's Blog Updates</title>
-		<link>https://thefelidae.github.io</link>
-		<description>This feed displays updates regarding TheFelidae's blog.</description>
+		<title>mrrpnya's Blog Updates</title>
+		<link>https://mrrpnya.github.io</link>
+		<description>This feed displays updates regarding mrrpnya's blog.</description>
 	</channel>
 </rss>
