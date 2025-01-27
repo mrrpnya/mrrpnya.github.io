@@ -30,11 +30,11 @@ def history_to_rss(history):
     root.set("version", "2.0")
     channel = ET.SubElement(root, "channel")
     title = ET.SubElement(channel, "title")
-    title.text = "TheFelidae's Blog Updates"
+    title.text = "Luna's Blog Updates"
     link = ET.SubElement(channel, "link")
-    link.text = "https://thefelidae.github.io"
+    link.text = "https://mrrpnya.github.io"
     description = ET.SubElement(channel, "description")
-    description.text = "This feed displays updates regarding TheFelidae's blog."
+    description.text = "This feed displays updates regarding Luna's blog."
 
     for post in history_dict["post_history"]:
         for date, posts in post.items():
@@ -43,7 +43,7 @@ def history_to_rss(history):
                     item = ET.SubElement(channel, "item")
                     title = ET.SubElement(item, "title")
                     link = ET.SubElement(item, "link")
-                    link.text = "https://thefelidae.github.io/blog/?post=" + path
+                    link.text = "https://mrrpnya.github.io/blog/?post=" + path
                     description = ET.SubElement(item, "description")
                     print(page)
                     if "op" in page:

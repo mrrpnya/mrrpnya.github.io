@@ -347,6 +347,6 @@ And this one uses a `<script>` tag to do the same thing:
 
 This is the end of the test post. I hope everything looks good! 
 
-- TheFelidae
+- Luna
 
 [^1]: This is the footnote.

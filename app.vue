@@ -8,8 +8,8 @@ import './assets/style/style.css'
 <template>
   <Head>
     <!-- inform browser of /rss.xml -->
-    <Link rel="alternate" type="application/rss+xml" title="RSS Feed for TheFelidae" href="/rss.xml" />
-    <Link rel="alternate" type="application/rss+atom" title="RSS Feed for TheFelidae" href="/rss.xml" />
+    <Link rel="alternate" type="application/rss+xml" title="RSS Feed for Luna's blog" href="/rss.xml" />
+    <Link rel="alternate" type="application/rss+atom" title="RSS Feed for Luna's blog" href="/rss.xml" />
   </Head>
   <Navbar/>
   <NuxtPage :transition="{
