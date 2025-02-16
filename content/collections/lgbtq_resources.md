@@ -1,6 +1,6 @@
 ---
 title: LGBTQ+ Resources
-description: A list of resources for LGBTQ+ individuals
+description: A list of resources for LGBTQ+ (and adjacent) individuals
 date: 2025-01-02
 tags: ['lgbtq', 'resources']
 ---
@@ -17,6 +17,10 @@ tags: ['lgbtq', 'resources']
 I will try not to provide medical advice, for I am not a doctor. Please consult a medical professional for any medical advice.
 ::
 
+::alert{type="info"}
+This article is a work in progress - You can submit an issue or pull request to contribute.
+::
+
 If you find that this list is lacking or inaccurate, please open a GitHub issue or pull request.
 
 ## Table of Contents
@@ -24,9 +28,10 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
 - [LGBTQ+ Resources](#lgbtq-resources)
   - [Table of Contents](#table-of-contents)
   - [Some FAQs](#some-faqs)
+    - [Do I have to have dysphoria to be trans?](#do-i-have-to-have-dysphoria-to-be-trans)
     - [Do I have to medically transition to be trans?](#do-i-have-to-medically-transition-to-be-trans)
-    - [Can I change course if I realize I'm something else? Like if I'm non-binary and realize I'm something else for instance?](#can-i-change-course-if-i-realize-im-something-else-like-if-im-non-binary-and-realize-im-something-else-for-instance)
-    - [What is plural?](#what-is-plural)
+    - [Can I change course if I realize I'm something else?](#can-i-change-course-if-i-realize-im-something-else)
+    - [What is plurality/multiplicity?](#what-is-pluralitymultiplicity)
     - [What is a therian?](#what-is-a-therian)
   - [LGBTQ+ Knowledge bases](#lgbtq-knowledge-bases)
   - [LGBTQ+ Flashcards](#lgbtq-flashcards)
@@ -41,21 +46,27 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
 
 ## Some FAQs
 
+### Do I have to have dysphoria to be trans?
+
+Nope. You don't need *any* dysphoria to be trans. If you want to be a gender? That's all you need.
+
 ### Do I have to medically transition to be trans?
 
 No. You do not have to medically transition - The belief that you must transition is actually known as "gatekeeping" and is harmful - This specific gatekeeping is known as transmedicalism.
 
-### Can I change course if I realize I'm something else? Like if I'm non-binary and realize I'm something else for instance?
+### Can I change course if I realize I'm something else?
 
-Yes. You can change course if you realize you're something else. It's okay to change your mind.
+Yes. You can change course if you realize you're something else (or perhaps cis after all). It's okay to change your mind.
 
-### What is plural?
+### What is plurality/multiplicity?
 
-Plural is a term used to describe systems of multiple people in one body.
+Plural is a term used to describe systems of multiple people in one body, put simply.
 While they *might* not be LGBTQ+ by default, they are often included in LGBTQ+ spaces due to the discrimination they face. It is important to respect their identities and pronouns.
 I also include information on plurality in this list because it is important to understand and respect plural systems.
 
 If you've watched Yu Yu Hakusho, think of Sensui and his multiple personalities.
+
+Here's a site that contains some quick information: [MoreThanOne.info](http://morethanone.info/)
 
 ### What is a therian?
 
