@@ -142,8 +142,7 @@ const filteredArticles = computed<pages.Page[]>(() => {
                                             <span v-if="postIds.includes(post.id)">
                                                 <!-- Display the flag image for each available language -->
                                                 <img :src="`/images/flags/${lang}.svg`" :alt="lang"
-                                                    class="inline-block w-6 h-4 mr-2"
-                                                />
+                                                    class="inline-block w-6 h-4 mr-2" />
                                             </span>
                                         </span>
                                     </div>

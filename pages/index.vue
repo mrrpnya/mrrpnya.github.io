@@ -14,23 +14,27 @@ let blog_list = pages.PageList.fromJSON(JSON.stringify(blog_list_json));
 
 const { locale, setLocale } = useI18n();
 
-let currentLocale = locale.value.toLowerCase().replace(/-/g, '_');
+const data = ref(null);
 
-const aboutMePage = blog_list.languages[currentLocale]?.categories['Site']?.posts.find(
-    post => {
-        const canonicalId = pages.PageList.getCanonicalId(post.id);
-        return canonicalId && canonicalId.toLowerCase().includes('about_me');
-    }
-);
+onMounted(async () => {
+	let currentLocale = locale.value.toLowerCase().replace(/-/g, '_');
 
-if (!aboutMePage) {
-    throw new Error(`"about_me" page not found for locale ${currentLocale}. Available posts: ${JSON.stringify(blog_list.languages[currentLocale]?.categories['Site']?.posts.map(p => p.id))}`);
-}
+	const aboutMePage = blog_list.languages[currentLocale]?.categories['Site']?.posts.find(
+		post => {
+			const canonicalId = pages.PageList.getCanonicalId(post.id);
+			return canonicalId && canonicalId.toLowerCase().includes('about_me');
+		}
+	);
 
-console.log("url:" + aboutMePage.url)
+	if (!aboutMePage) {
+		throw new Error(`"about_me" page not found for locale ${currentLocale}. Available posts: ${JSON.stringify(blog_list.languages[currentLocale]?.categories['Site']?.posts.map(p => p.id))}`);
+	}
 
-const { data } = await useAsyncData('about_me', () => queryContent(aboutMePage.url).findOne());
+	console.log("url:" + aboutMePage.url)
 
+	const fetchedData = await queryContent(aboutMePage.url).findOne();
+	data.value = fetchedData;
+})
 </script>
 
 <template>
@@ -81,10 +85,12 @@ const { data } = await useAsyncData('about_me', () => queryContent(aboutMePage.u
 					</NuxtLink>
 				</div>
 			</div>
-			<Card class="max-w-4xl mt-4 max-md:w-screen">
-				<Markdown :input="aboutMe" type="markdown"></Markdown>
-				<ContentRendererMarkdown :value="data" class="md-content" />
-			</Card>
+			<div v-if="data !== null">
+				<Card class="max-w-4xl mt-4 max-md:w-screen">
+					<Markdown :input="aboutMe" type="markdown"></Markdown>
+					<ContentRendererMarkdown :value="data" class="md-content" />
+				</Card>
+			</div>
 		</div>
 	</div>
 </template>
