@@ -31,6 +31,9 @@ const background: Ref<string> = ref('');
 const next: Ref<string> = ref('');
 const previous: Ref<string> = ref('');
 
+import page_list_Data from "~/assets/meta/post_list.json"
+const page_list = page.PageList.fromJSON(JSON.stringify(await page_list_Data))
+
 function tagsToString(tags: String[]): string {
     var tagString = '';
     for (let i = 0; i < tags.length; i++) {
@@ -62,6 +65,7 @@ watch(route, async () => {
 }, {
     immediate: true
 });
+import * as page from "~/utils/page_updater/update_pagelist"
 
 async function fetchArticle(url: string, region?: string): Promise<any> {
     if (!url) {
@@ -70,19 +74,30 @@ async function fetchArticle(url: string, region?: string): Promise<any> {
     }
     try {
         // Trim the .md extension
-        var trimmedUrl = url.replace(/\.md$/, '');
+        const trimmedUrl = url.replace(/^\//, '').replace(/\.md$/, '');
         console.log('[id].vue - Fetching article: ' + trimmedUrl);
 
         // Define the available languages in the order of preference (falling back on the next if one fails)
         const languages = [region ? region : locale.value, 'en', 'fr', 'de']; // Add all available languages in order of preference
-        console.log(languages)
+        console.log(languages);
         let dataFound = false;
         let data: any = null;
 
+        // Check the presence of the article in each language using page utility
         for (let lang of languages) {
-            console.log(`Querying ${lang}${trimmedUrl}`)
+            // Check if the page exists in the specified language
+            const pageExists = page_list.pageExistsInLang(lang, trimmedUrl);
+            console.log(`Checking if article exists for language ${lang}: ${pageExists}`);
+
+            if (!pageExists) {
+                console.warn(`Article does not exist for language ${lang}`);
+                continue; // Skip this language and try the next one
+            }
+
+            // If the page exists, fetch its content
+            console.log(`Querying /${lang}/${trimmedUrl}`);
             const { data: languageData, error } = await useAsyncData(`${lang}/${trimmedUrl}`, () =>
-                queryContent(`${lang}${trimmedUrl}`).findOne()
+                queryContent(`/${lang}/${trimmedUrl}`).findOne()
             );
 
             if (error.value) {
@@ -138,13 +153,8 @@ const data = await fetchArticle(url.value);
 updateMetadata(data);
 
 console.log('Prefetching article');
-onMounted(async () => {
-    console.log('Fetching article :3');
-    await fetchArticle(url.value);
-});
 
 const temp_url = route.query.post as string;
-await fetchArticle(temp_url);
 
 const fullTitle = data.title + ' | ' + siteConfig.siteTitle;
 
@@ -211,14 +221,14 @@ useSeoMeta({
                     <div>
                         <!-- Next/Prev controls, on the left and right side using PostCards -->
                         <div class="flex max-w-4xl max-md:w-screen">
-                            <div class="justify-start">
+                            <!--<div class="justify-start">
                                 <NuxtLink v-if="previous" :onclick="resetReadingPosition" :to="previous"
                                     class="m-2 text-white">Previous</NuxtLink>
                             </div>
                             <div class="justify-end">
                                 <NuxtLink v-if="next" :onclick="resetReadingPosition" :to="next"
                                     class="m-2 text-white">Next</NuxtLink>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <!-- Article Content -->
@@ -230,12 +240,12 @@ useSeoMeta({
                             <!-- Aligned next/prev controls -->
                             <div class="flex">
                                 <div class="justify-start">
-                                    <NuxtLink v-if="previous" :onclick="resetReadingPosition" :to="previous"
-                                        class="m-2 text-white">Previous</NuxtLink>
+                                    <!--<NuxtLink v-if="previous" :onclick="resetReadingPosition" :to="previous"
+                                        class="m-2 text-white">Previous</NuxtLink>-->
                                 </div>
                                 <div class="justify-end">
-                                    <NuxtLink v-if="next" :onclick="resetReadingPosition" :to="next"
-                                        class="m-2 text-white">Next</NuxtLink>
+                                    <!--<NuxtLink v-if="next" :onclick="resetReadingPosition" :to="next"
+                                        class="m-2 text-white">Next</NuxtLink>-->
                                 </div>
                             </div>
                         </article>

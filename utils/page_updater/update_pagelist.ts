@@ -1,4 +1,3 @@
-
 import * as pages from "./pages.ts";
 import { format } from "date-fns";
 
@@ -196,6 +195,51 @@ export class PageList {
             pages: data.pages,
         }));
     }
+
+    /**
+     * Check if a page exists in any language.
+     * @param canonicalId - The canonical ID of the page (language prefix removed)
+     * @returns True if the page exists in any language, otherwise false.
+     */
+    pageExists(canonicalId: string): boolean {
+        for (const lang of Object.keys(this.languages)) {
+            const categories = this.languages[lang].categories;
+            for (const categoryName of Object.keys(categories)) {
+                const page = categories[categoryName].posts.find(
+                    (p) => PageList.getCanonicalId(p.id) === canonicalId,
+                );
+                if (page) {
+                    return true; // Page found
+                }
+            }
+        }
+        return false; // Page not found in any language
+    }
+
+    /**
+     * Check if a page exists in a specific language.
+     * @param lang - The language code (e.g., "en")
+     * @param canonicalId - The canonical ID of the page (language prefix removed)
+     * @returns True if the page exists in the specified language, otherwise false.
+     */
+    pageExistsInLang(lang: string, canonicalId: string): boolean {
+        const categories = this.languages[lang]?.categories;
+        if (!categories) {
+            return false; // Language not found
+        }
+
+        // Check each category for the page with the given canonical ID
+        for (const categoryName of Object.keys(categories)) {
+            const page = categories[categoryName].posts.find(
+                p => p.id == canonicalId
+            );
+            if (page) {
+                return true; // Page found in this language
+            }
+        }
+
+        return false; // Page not found in the specified language
+    }
 }
 
 /**
@@ -204,7 +248,9 @@ export class PageList {
  * @param pagesInfo - An object where keys are paths (e.g., "content/[lang]/...") and values are page data.
  * @returns A PageCategory object containing an array of Page objects.
  */
-export function generatePageCategory(pagesInfo: Record<string, any>): PageCategory {
+export function generatePageCategory(
+    pagesInfo: Record<string, any>,
+): PageCategory {
     const pageList: Page[] = [];
 
     for (const [filePath, page] of Object.entries(pagesInfo)) {
@@ -236,7 +282,7 @@ export function generatePageCategory(pagesInfo: Record<string, any>): PageCatego
         title: "",
         description: "",
         tags: [],
-        show: true
+        show: true,
     };
 }
 
@@ -259,7 +305,7 @@ export const postDirectories: pages.PageLocation[] = [
         tags: ["site"],
         map: "site",
         root: "", // Not used in the new structure
-        show: false
+        show: false,
     },
     {
         title: "Collections",
@@ -268,7 +314,7 @@ export const postDirectories: pages.PageLocation[] = [
         tags: ["collection"],
         map: "collections",
         root: "",
-        show: true
+        show: true,
     },
     {
         title: "Guides",
@@ -276,6 +322,6 @@ export const postDirectories: pages.PageLocation[] = [
         tags: ["guide"],
         map: "guides",
         root: "",
-        show: true
+        show: true,
     },
 ];

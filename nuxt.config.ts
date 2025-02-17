@@ -19,7 +19,7 @@ for (const [lang, langData] of Object.entries(blog_list.languages)) {
       // Remove the file extension (e.g. "page.md" becomes "page")
       const postSlug = canonicalId.replace(/\.md$/, '');
       // Build the localized route (e.g. "/en/article/page")
-      blog_nitro_routes.push(`/${lang}/article/${postSlug}`);
+      blog_nitro_routes.push(`/${lang}/article/${lang}/${categoryName.toLowerCase()}/${postSlug}`);
     }
   }
 }
@@ -37,9 +37,9 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    "/article/:category:/:id": {
-      redirect: "/article/:category:/:id/index.html",
-    },
+    "/article/:lang/:category:/:id": {
+      redirect: "/article/:lang/:category:/:id/index.html",
+    }
   },
   app: {
     pageTransition: {
@@ -54,7 +54,10 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
   ],
   i18n: {
+    strategy: 'prefix_and_default',
+    defaultLocale: 'en',
     vueI18n: './i18n.config.ts',
+    baseUrl: process.env.SITE_BASE_URL,
     locales: [
       {
         code: 'en',
@@ -62,7 +65,7 @@ export default defineNuxtConfig({
       },
       {
         code: 'tp',
-        name: 'Toki Pona'
+        name: 'toki pona'
       }
     ]
   },
