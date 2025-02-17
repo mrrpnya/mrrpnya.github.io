@@ -67,10 +67,12 @@ async function fetchData(url: string) {
 onMounted(() => {
     fetchData(url.value)
 })
+
+const localePath = useLocalePath();
 </script>
 
 <template>
-    <NuxtLink :href="'/article' + url">
+    <NuxtLink :to="localePath('/article/') + '/' + url">
         <!-- Large -->
         <div v-if = "size === 'full'">
             <div class="m-4 min-h-30 min-width-90 text-white transition hover:bg-purple-600 bg-opacity-50 hover:bg-opacity-70">
@@ -96,6 +98,9 @@ onMounted(() => {
                                         <span class="text-xs bg-black border-purple-400 border-2 text-white p-1 rounded-md">{{ tag }}</span>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="justify-center">
+                                <slot></slot>
                             </div>
                         </div>
                         <p>{{ description }}</p>
@@ -139,6 +144,9 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
+                            <div class="justify-center">
+                                <slot></slot>
+                            </div>
                         </div>
                     </div>
                 </Card>
@@ -159,6 +167,7 @@ onMounted(() => {
                             <div class="justify-center">
                                 <h3>{{ title }}</h3>
                                 <small>{{  date  }}</small>
+                                <slot></slot>
                             </div>
                         </div>
                     </div>
@@ -179,6 +188,7 @@ onMounted(() => {
                         <div class="grid">
                             <div class="justify-center">
                                 <h5>{{ title }}</h5>
+                                <slot></slot>
                             </div>
                         </div>
                     </div>

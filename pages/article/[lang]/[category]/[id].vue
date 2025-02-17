@@ -1,103 +1,152 @@
 <script setup lang="ts">
 import { onMounted, watch, ref } from 'vue';
 import fm from 'front-matter';
-
 import PostCard from '~/components/PostCard.vue';
 import * as pages from '~/utils/page_updater/update_pagelist';
 import type { PageInfo, PageInfoMetdata } from '~/utils/page_updater/pages';
 import type { ParsedContent } from '@nuxt/content';
 import siteConfig from '~/assets/config';
 
-let route = useRoute()
-console.log(route)
+let route = useRoute();
+const { locale, setLocale } = useI18n();
+console.log(route);
 
-const url: Ref<string> = ref("")
-url.value = '/' + route.params.category.concat('/' + route.params.id as string) as string
+const url: Ref<string> = ref('');
+url.value = '/' + route.params.category.concat('/' + route.params.id as string) as string;
 
-console.log(url.value)
+console.log(url.value);
 
-const loading: Ref<boolean> = ref(false)
+const loading: Ref<boolean> = ref(false);
 
-const tagFilter: Ref<string[]> = ref([])
-tagFilter.value = []
+const tagFilter: Ref<string[]> = ref([]);
+tagFilter.value = [];
 
-const markdown: Ref<any> = ref(null)
+const markdown: Ref<any> = ref(null);
 
-const title: Ref<string> = ref("")
-const description: Ref<string> = ref("")
-const date: Ref<string> = ref("")
-const tags: Ref<string[]> = ref([])
-const background: Ref<string> = ref("")
-const next: Ref<string> = ref("")
-const previous: Ref<string> = ref("")
+const title: Ref<string> = ref('');
+const description: Ref<string> = ref('');
+const date: Ref<string> = ref('');
+const tags: Ref<string[]> = ref([]);
+const background: Ref<string> = ref('');
+const next: Ref<string> = ref('');
+const previous: Ref<string> = ref('');
 
 function tagsToString(tags: String[]): string {
     var tagString = '';
     for (let i = 0; i < tags.length; i++) {
         tagString += tags[i];
     }
-
     return tagString;
 }
 
 function updateMetadata(data: ParsedContent) {
-    title.value = data.title ? data.title : ""
-    description.value = data.description ? data.description : ""
-    date.value = data.date ? new Date(data.date).toLocaleDateString() : ""
-    tags.value = data.tags ? data.tags : []
-    background.value = data.background ? data.background : ""
+    title.value = data.title ? data.title : '';
+    description.value = data.description ? data.description : '';
+    date.value = data.date ? new Date(data.date).toLocaleDateString() : '';
+    tags.value = data.tags ? data.tags : [];
+    background.value = data.background ? data.background : '';
 }
 
 // watch the params of the route to fetch the data again
 watch(route, async () => {
-    url.value = '/' + route.params.category.concat('/' + route.params.id as string) as string
+    url.value = '/' + route.params.category.concat('/' + route.params.id as string) as string;
     if (url.value) {
-        console.log("Fetching article")
-        loading.value = true
+        console.log('Fetching article');
+        loading.value = true;
         try {
-            await fetchArticle(url.value)
-        }
-        finally {
-            loading.value = false
+            await fetchArticle(url.value, route.params.lang as string);
+        } finally {
+            loading.value = false;
         }
     }
 }, {
     immediate: true
 });
 
-// Fetch the article contents from the URL
-async function fetchArticle(url: string): Promise<any> {
+async function fetchArticle(url: string, region?: string): Promise<any> {
     if (!url) {
-        return
+        console.error('fetchArticle: No URL provided');
+        return;
     }
-    // Trim the .md extension
-    var url = url.replace(/\.md$/, "")
-    console.log("Fetching article: " + url)
-    const { data } = await useAsyncData(url, () => queryContent(url).findOne())
-    console.log(data)
-    
-    markdown.value = data.value;
-    updateMetadata(markdown.value)
+    try {
+        // Trim the .md extension
+        var trimmedUrl = url.replace(/\.md$/, '');
+        console.log('[id].vue - Fetching article: ' + trimmedUrl);
 
-    return data.value
+        // Define the available languages in the order of preference (falling back on the next if one fails)
+        const languages = [region ? region : locale.value, 'en', 'fr', 'de']; // Add all available languages in order of preference
+        console.log(languages)
+        let dataFound = false;
+        let data: any = null;
+
+        for (let lang of languages) {
+            console.log(`Querying ${lang}${trimmedUrl}`)
+            const { data: languageData, error } = await useAsyncData(`${lang}/${trimmedUrl}`, () =>
+                queryContent(`${lang}${trimmedUrl}`).findOne()
+            );
+
+            if (error.value) {
+                console.warn(`Error fetching article for language ${lang}:`, error.value);
+                continue; // Try the next language
+            }
+
+            if (languageData.value) {
+                data = languageData.value;
+                dataFound = true;
+                break; // Break as soon as data is found
+            }
+        }
+
+        if (!dataFound) {
+            console.warn('fetchArticle: No data found for URL', trimmedUrl);
+            return;
+        }
+
+        console.log(data);
+        markdown.value = data;
+        updateMetadata(markdown.value);
+
+        // Update next/previous links based on language
+        const language = route.query.lang || 'en'; // Use the language from the route or default to 'en'
+        updateNavigationLinks(language as string);
+
+        return data;
+    } catch (err) {
+        console.error('fetchArticle: An unexpected error occurred', err);
+    }
+}
+
+
+function updateNavigationLinks(language: string) {
+    // Get the next and previous articles based on the current language
+    const postId = route.params.id as string;
+  //  const langPosts = languageMap[language] || [];
+   // const postIndex = langPosts.indexOf(postId);
+
+   // if (postIndex !== -1) {
+        // Find the previous and next posts in the same language
+    //    previous.value = langPosts[postIndex - 1] || '';
+    //    next.value = langPosts[postIndex + 1] || '';
+  //  }
 }
 
 function resetReadingPosition() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
 }
 
-const data = await fetchArticle(url.value)
-updateMetadata(data)
+const data = await fetchArticle(url.value);
+updateMetadata(data);
 
-console.log("Prefetching article")
+console.log('Prefetching article');
 onMounted(async () => {
-    console.log("Fetching article :3")
-    await fetchArticle(url.value)
-})
-const temp_url = route.query.post as string
+    console.log('Fetching article :3');
+    await fetchArticle(url.value);
+});
+
+const temp_url = route.query.post as string;
 await fetchArticle(temp_url);
 
-const fullTitle = data.title + " | " + siteConfig.siteTitle;
+const fullTitle = data.title + ' | ' + siteConfig.siteTitle;
 
 useHead({
     title: fullTitle,
@@ -122,7 +171,7 @@ useHead({
         { name: 'og:image', content: background },
         { name: 'og:image:alt', content: fullTitle }
     ]
-})
+});
 
 useSeoMeta({
     title: fullTitle,
@@ -146,7 +195,7 @@ useSeoMeta({
 
 <template>
     <div class="relative z-50 flex w-full justify-center text-white">
-                <!-- Article Viewer -->
+        <!-- Article Viewer -->
         <div class="mt-8 flex-col text-center">
             <Transition name="list">
                 <div class="flex flex-col" :key="url">

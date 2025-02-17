@@ -9,6 +9,10 @@ html {
     @apply min-h-screen bg-slate-950;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+}
+
 h1 {
     font-family: 'Lobster', cursive, 'Courier New', Courier, monospace;
     @apply text-3xl font-bold;

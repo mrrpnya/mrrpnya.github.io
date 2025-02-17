@@ -88,6 +88,15 @@ By flashcards, I mean something short that can be rapidly shared to provide info
 
 > A site that provides information on plurality, myths, etiquette, terms, and more.
 
+- [Pronouns.page](https://pronouns.page)
+
+> A site that lets you create cards about you that you can share! You can also add friends and relatives on it.
+
+- [Pronouns.cc](https://pronouns.cc)
+
+> Similar to pronouns.page, however it is tailored to be able to better handle plural systems and so on. 
+> It is open source under the GNU AGPL.
+
 ## LGBTQ+ Content Creators and Artists
 
 - [Chipflake](https://www.youtube.com/@chipflake)

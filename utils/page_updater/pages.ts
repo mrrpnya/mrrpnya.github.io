@@ -9,6 +9,7 @@ export interface PageLocation {
     tags: string[];
     map: string;
     root: string;
+    show: boolean;
 }
 
 export interface PageInfoMetdata {
