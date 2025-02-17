@@ -5,9 +5,9 @@ prop: true
 
 # 🌙 Luna - She/They/Fae 🌙
 
-<br>
+<small>Profile picture by Chereverie on [Picrew](https://picrew.me/en/image_maker/100365)</small>
 
-[`mrrpnya@proton.me`](mailto:thelunacy@proton.me)
+<br>
 
 <br>
 

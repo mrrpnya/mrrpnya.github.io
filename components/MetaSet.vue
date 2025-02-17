@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import siteConfig from '../assets/config';
+import siteConfig from '~/assets/config';
 
 const props = defineProps({
     title: {

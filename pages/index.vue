@@ -2,25 +2,46 @@
 import { ref } from 'vue';
 import Markdown from '~/components/Markdown.vue';
 import Card from '~/components/Card.vue';
-import siteTitle from '../assets/config'
+import siteTitle from '~/assets/config'
+import * as pages from "~/utils/page_updater/update_pagelist";
 
 const aboutMe = ref('');
 const test = ref('');
 
-const { data } = await useAsyncData('about_me', () => queryContent('/about_me').findOne())
+let blog_list_json = (await import("~/assets/meta/post_list.json")).default;
+
+let blog_list = pages.PageList.fromJSON(JSON.stringify(blog_list_json));
+
+const { locale, setLocale } = useI18n();
+
+let currentLocale = locale.value.toLowerCase().replace(/-/g, '_');
+
+const aboutMePage = blog_list.languages[currentLocale]?.categories['Site']?.posts.find(
+    post => {
+        const canonicalId = pages.PageList.getCanonicalId(post.id);
+        return canonicalId && canonicalId.toLowerCase().includes('about_me');
+    }
+);
+
+if (!aboutMePage) {
+    throw new Error(`"about_me" page not found for locale ${currentLocale}. Available posts: ${JSON.stringify(blog_list.languages[currentLocale]?.categories['Site']?.posts.map(p => p.id))}`);
+}
+
+console.log("url:" + aboutMePage.url)
+
+const { data } = await useAsyncData('about_me', () => queryContent(aboutMePage.url).findOne());
 
 </script>
 
 <template>
 	<div class="relative flex w-full justify-center text-white">
 		<!-- Metadata -->
-		<MetaSet title="Home" :description="siteTitle"
-			background="/images/me.png" tags="home, personal, author" />
+		<MetaSet title="Home" :description="siteTitle" background="/images/me.png" tags="home, personal, author" />
 		<div class="mt-8 flex-col text-center">
 			<div class="flex justify-center">
 				<div id="PFP" class="shadow-md rounded-full shadow-highlight">
-					<img class="transition-all w-40 h-40 md:w-56 md:h-56 rounded-full"
-						src="/images/me.png" alt="User PFP" />
+					<img class="transition-all w-40 h-40 md:w-56 md:h-56 rounded-full" src="/images/me.png"
+						alt="User PFP" />
 				</div>
 
 			</div>

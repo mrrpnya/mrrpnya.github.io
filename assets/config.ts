@@ -4,6 +4,7 @@ export default {
     siteDescription: "Luna's rambling place!",
     siteUrl: 'https://mrrpnya.github.io',
     siteImage: '',
+    siteDefaultLocale: 'en_us',
 
     // Site personalization
     siteColor: '#550077',

@@ -1,144 +1,212 @@
 {
-  "last_generated": "2025-01-04 12:52:32",
-  "categories": {
-    "Site": {
-      "posts": [
-        {
-          "metadata": {
-            "title": "Styling Test",
-            "description": "A test post to see how the site styling looks",
-            "date": "2024-12-31 16:00:00",
-            "tags": [
-              "meta",
-              "web"
-            ]
-          },
-          "id": "site/styling_test",
-          "url": "/site/styling_test",
-          "hash": "0ff9f34321a27f462ca26656a1dc5024c0e800ea1e176ff36316b158ab4606c9"
+  "last_generated": "2025-02-16 14:47:00",
+  "languages": {
+    "en": {
+      "categories": {
+        "Site": {
+          "posts": [
+            {
+              "metadata": {
+                "title": "Styling Test",
+                "description": "A test post to see how the site styling looks",
+                "date": "2025-01-01T00:00:00.000Z",
+                "tags": [
+                  "meta",
+                  "web"
+                ]
+              },
+              "id": "site/styling_test",
+              "url": "en/site/styling_test",
+              "hash": "e581ca6fef00cdc54a660744b295ff83ce05c2d75561a43695917dde2aa2d06f"
+            },
+            {
+              "metadata": {
+                "title": "About Me",
+                "prop": true
+              },
+              "id": "site/about_me",
+              "url": "en/site/about_me",
+              "hash": "85cd293e18e1f11b8f49c3858c78b98d7cb3dfcc31b347d76db1be7d8c400b81"
+            }
+          ],
+          "title": "Site",
+          "description": "Articles to test site functionality",
+          "tags": [
+            "site"
+          ],
+          "show": false
+        },
+        "Collections": {
+          "posts": [
+            {
+              "metadata": {
+                "title": "Neurodiverse Resources",
+                "description": "A list of neurodiversity resources",
+                "date": "2025-02-04T00:00:00.000Z",
+                "tags": [
+                  "neurodiversity",
+                  "resources"
+                ],
+                "thumb": null
+              },
+              "id": "collections/neurodiverse_resources",
+              "url": "en/collections/neurodiverse_resources",
+              "hash": "18e37836ef191c0adb0a139f151e5827d79e170d0ab039ff63d67093cf7f9e36"
+            },
+            {
+              "metadata": {
+                "title": "Godot Resources",
+                "description": "A bunch of stuff for Godot",
+                "date": "2025-01-22T00:00:00.000Z",
+                "tags": [
+                  "godot",
+                  "curated"
+                ]
+              },
+              "id": "collections/godot",
+              "url": "en/collections/godot",
+              "hash": "0fa66e5f5346902661fb67a979340701155c25d73dafa05b3bf7446aac5a49b9"
+            },
+            {
+              "metadata": {
+                "title": "LGBTQ+ Resources",
+                "description": "A list of resources for LGBTQ+ (and adjacent) individuals",
+                "date": "2025-01-02T00:00:00.000Z",
+                "tags": [
+                  "lgbtq",
+                  "resources"
+                ]
+              },
+              "id": "collections/lgbtq_resources",
+              "url": "en/collections/lgbtq_resources",
+              "hash": "2f1f9c04ef62313bccecf7e5f22b95e862a36fce260b34ca64286e684a453196"
+            },
+            {
+              "metadata": {
+                "title": "Badges!",
+                "description": "Some 88x31 badges for various things",
+                "date": "2024-12-21T00:00:00.000Z",
+                "tags": [
+                  "badges",
+                  "retro",
+                  "web"
+                ]
+              },
+              "id": "collections/badges",
+              "url": "en/collections/badges",
+              "hash": "7fc0dbfff6dfba66b5a6e93ba4394a2034ab3935ae6acaf2b5ac4a815116d24e"
+            },
+            {
+              "metadata": {
+                "title": "Awesome",
+                "description": "A curated list of awesome stuff I like",
+                "date": "2024-11-26T00:00:00.000Z",
+                "tags": [
+                  "awesome",
+                  "curated"
+                ]
+              },
+              "id": "collections/awesome",
+              "url": "en/collections/awesome",
+              "hash": "43704f5de68e422ca3187cda0e34084d6ad3b930b4238bdd1b80535c3013c191"
+            }
+          ],
+          "title": "Collections",
+          "description": "Articles that are collections of information: Lists, Awesome lists, etc.",
+          "tags": [
+            "collection"
+          ],
+          "show": true
+        },
+        "Guides": {
+          "posts": [
+            {
+              "metadata": {
+                "title": "3DS Programming - Using RomFS",
+                "description": "A guide to using RomFS on the 3DS. (Old)",
+                "date": "2025-01-01T00:00:00.000Z",
+                "tags": [
+                  "3ds",
+                  "programming",
+                  "c",
+                  "devkitpro",
+                  "old"
+                ],
+                "previous": "old3ds_helloworld.md",
+                "next": "old3ds_touchscreen.md"
+              },
+              "id": "guides/old3ds_romfs",
+              "url": "en/guides/old3ds_romfs",
+              "hash": "f518b6cdf7a5eb0d72f86c305089df5ee42a4c4aae1589c7abace33368dd4ede"
+            },
+            {
+              "metadata": {
+                "title": "3DS Programming - Touchscreen Input",
+                "description": "A guide to using the touchscreen on the 3DS. (Old)",
+                "date": "2025-01-01T00:00:00.000Z",
+                "tags": [
+                  "3ds",
+                  "programming",
+                  "c",
+                  "devkitpro",
+                  "old"
+                ],
+                "previous": "old3ds_romfs.md"
+              },
+              "id": "guides/old3ds_touchscreen",
+              "url": "en/guides/old3ds_touchscreen",
+              "hash": "c026e506fb60c8ed9943f5806e8adf611a382a7de34e30fc2a72f4578d66899e"
+            },
+            {
+              "metadata": {
+                "title": "3DS Programming - Hello World",
+                "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",
+                "date": "2025-01-01T00:00:00.000Z",
+                "tags": [
+                  "3ds",
+                  "programming",
+                  "c",
+                  "devkitpro",
+                  "old"
+                ],
+                "next": "old3ds_romfs.md"
+              },
+              "id": "guides/old3ds_helloworld",
+              "url": "en/guides/old3ds_helloworld",
+              "hash": "77a21a1201a35d6a85cb2305166cfb20a0a45546fea1f73fd620b2b84ec70fda"
+            }
+          ],
+          "title": "Guides",
+          "description": "Guides and tutorials",
+          "tags": [
+            "guide"
+          ],
+          "show": true
         }
-      ],
-      "title": "Site",
-      "description": "Articles to test site functionality",
-      "tags": [
-        "site"
-      ]
+      }
     },
-    "Collections": {
-      "posts": [
-        {
-          "metadata": {
-            "title": "LGBTQ+ Resources",
-            "description": "A list of resources for LGBTQ+ individuals",
-            "date": "2025-01-01 16:00:00",
-            "tags": [
-              "lgbtq+",
-              "resources"
-            ]
-          },
-          "id": "collections/lgbtq_resources",
-          "url": "/collections/lgbtq_resources",
-          "hash": "3da76064aa95cc06937bde01128ed44aafb850f35a43bd214ce0cd89a875c674"
-        },
-        {
-          "metadata": {
-            "title": "Badges!",
-            "description": "A collection of 88x31 badges for various things",
-            "date": "2024-12-20 16:00:00",
-            "tags": [
-              "badges",
-              "retro",
-              "web"
-            ]
-          },
-          "id": "collections/badges",
-          "url": "/collections/badges",
-          "hash": "338ccfecc6523dff93708330a8b43af715f1e80d55e1cc3bea2d1a7306fc4f00"
-        },
-        {
-          "metadata": {
-            "title": "Awesome",
-            "description": "A curated list of awesome stuff I like",
-            "date": "2024-11-25 16:00:00",
-            "tags": [
-              "awesome",
-              "curated"
-            ]
-          },
-          "id": "collections/awesome",
-          "url": "/collections/awesome",
-          "hash": "0632400858006b93f2f36d87953538c2a400bacc75aaa29928aee226e8b343b1"
+    "tp": {
+      "categories": {
+        "Site": {
+          "posts": [
+            {
+              "metadata": {
+                "title": "About Me",
+                "prop": true
+              },
+              "id": "site/about_me",
+              "url": "tp/site/about_me",
+              "hash": "c6bde941d29567f1a3b98e52d68d50dad233f55a0c4d23d60b17efe292bd4e39"
+            }
+          ],
+          "title": "Site",
+          "description": "Articles to test site functionality",
+          "tags": [
+            "site"
+          ],
+          "show": false
         }
-      ],
-      "title": "Collections",
-      "description": "Articles that are collections of information: Lists, Awesome lists, etc.",
-      "tags": [
-        "collection"
-      ]
-    },
-    "Guides": {
-      "posts": [
-        {
-          "metadata": {
-            "title": "3DS Programming - Using RomFS",
-            "description": "A guide to using RomFS on the 3DS. (Old)",
-            "date": "2024-12-31 16:00:00",
-            "tags": [
-              "3ds",
-              "programming",
-              "c",
-              "devkitpro",
-              "old"
-            ],
-            "previous": "old3ds_helloworld.md",
-            "next": "old3ds_touchscreen.md"
-          },
-          "id": "guides/old3ds_romfs",
-          "url": "/guides/old3ds_romfs",
-          "hash": "34062b79909f5b18a647b484687cf862e779c08da9fc6052c4ebab3eef67151c"
-        },
-        {
-          "metadata": {
-            "title": "3DS Programming - Touchscreen Input",
-            "description": "A guide to using the touchscreen on the 3DS. (Old)",
-            "date": "2024-12-31 16:00:00",
-            "tags": [
-              "3ds",
-              "programming",
-              "c",
-              "devkitpro",
-              "old"
-            ],
-            "previous": "old3ds_romfs.md"
-          },
-          "id": "guides/old3ds_touchscreen",
-          "url": "/guides/old3ds_touchscreen",
-          "hash": "c026e506fb60c8ed9943f5806e8adf611a382a7de34e30fc2a72f4578d66899e"
-        },
-        {
-          "metadata": {
-            "title": "3DS Programming - Hello World",
-            "description": "A guide to creating a simple Hello, World program for the 3DS. (Old)",
-            "date": "2024-12-31 16:00:00",
-            "tags": [
-              "3ds",
-              "programming",
-              "c",
-              "devkitpro",
-              "old"
-            ],
-            "next": "old3ds_romfs.md"
-          },
-          "id": "guides/old3ds_helloworld",
-          "url": "/guides/old3ds_helloworld",
-          "hash": "77a21a1201a35d6a85cb2305166cfb20a0a45546fea1f73fd620b2b84ec70fda"
-        }
-      ],
-      "title": "Guides",
-      "description": "Guides and tutorials",
-      "tags": [
-        "guide"
-      ]
+      }
     }
   }
 }

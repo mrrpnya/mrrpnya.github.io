@@ -16,3 +16,7 @@ tags: ['godot', 'curated']
 ::alert{type="note"}
 If you find that this list is lacking or inaccurate, please open a GitHub issue or pull request.
 ::
+
+::alert{type="info"}
+This article is a work in progress - You can submit an issue or pull request to contribute.
+::
