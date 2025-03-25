@@ -35,7 +35,7 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
     - [Can I change course if I realize I'm something else?](#can-i-change-course-if-i-realize-im-something-else)
     - [What is plurality/multiplicity?](#what-is-pluralitymultiplicity)
     - [What is a therian?](#what-is-a-therian)
-  - [LGBTQ+ Knowledge bases](#lgbtq-knowledge-bases)
+  - [LGBTQ+ Knowledge bases and Other Resource Lists](#lgbtq-knowledge-bases-and-other-resource-lists)
   - [LGBTQ+ Flashcards](#lgbtq-flashcards)
   - [LGBTQ+ Content Creators and Artists](#lgbtq-content-creators-and-artists)
   - [LGBTQ+ Communities](#lgbtq-communities)
@@ -83,11 +83,12 @@ A therian is someone who identifies as a non-human animal on a spiritual or psyc
 
 I think I'll need to research more on this topic before I can provide that much more info.
 
-## LGBTQ+ Knowledge bases
+## LGBTQ+ Knowledge bases and Other Resource Lists
 
 - [LGBTQ+ Wiki](https://lgbt.wikia.org/)
 - [Pluralpedia](https://pluralpedia.org/)
 - [The Gender Dysphoria Bible](https://genderdysphoria.fyi/) (aka That's Gender Dysphoria, FYI)
+- [GLAAD LGBTQ Resource List](https://glaad.org/resourcelist/)
 
 ## LGBTQ+ Flashcards
 
@@ -130,6 +131,12 @@ By flashcards, I mean something short that can be rapidly shared to provide info
 > <img src="https://preview.redd.it/dont-wear-it-out-or-do-lol-v0-f5tmtdnzht5b1.png?width=1080&crop=smart&auto=webp&s=523de1592bfa419890ac9e4d6f6b56b39f3fb369" width="300" height="200" alt="Brooke is her name!"></img>
 
 ## LGBTQ+ Communities
+
+- [Trans Academy 501c3](https://www.transacademy.org/)
+
+> Trans Academy is a Non-Profit 501c3 committed to fostering a safe, inclusive, and educational virtual environment that empowers the transgender community and their allies.
+> They provide communities on Discord and VRChat, and also provide training, classes, networking, and other resources.
+> Classes include voice training, computer science, etc.
 
 - [r/traaaaaaannnnnnnnnns2](https://www.reddit.com/r/traaaaaaannnnnnnnnns2/)
 
