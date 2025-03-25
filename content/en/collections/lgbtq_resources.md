@@ -45,6 +45,8 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
   - [Experiences of coming out and realization](#experiences-of-coming-out-and-realization)
   - [Voice Training](#voice-training)
   - [HRT Access](#hrt-access)
+  - [Political](#political)
+    - [Videos](#videos)
   - [Fashion](#fashion)
     - [General Resources](#general-resources)
     - [Feminine](#feminine)
@@ -146,7 +148,7 @@ By flashcards, I mean something short that can be rapidly shared to provide info
 - [The Orchard Discord Server](https://discord.gg/theorchard)
 
 > A Discord server for LGBTQ+, plural, therian, and so on individuals.
-> It tries to be a safe space for all, and has a variety of channels for different topics. Note though that the rules are strict.
+> It tries to be a safe space for all, and has a variety of channels for different topics. Note though that the rules are stricter than other servers.
 
 - [r/egg_irl](https://www.reddit.com/r/egg_irl/)
 
@@ -200,6 +202,21 @@ You may have heard some bigots claiming that it was mistranslation - No, it was 
 
 > A Google Maps map that shows informed consent HRT clinics in the US.
 > <iframe src="https://www.google.com/maps/d/embed?mid=1DxyOTw8dI8n96BHFF2JVUMK7bXsRKtzA&hl=en_US&ehbc=2E312F" width="400" height="350"></iframe>
+
+## Political
+
+::alert{type="warning"}
+The below content deals with political topics and may distress some audiences.
+::
+
+<details>
+
+### Videos
+
+-  *"Surviving Trump: A guide for Trans and LGBTQ youth"* by Angry Gay Grandpa
+> <iframe width="300" height="200" src="https://www.youtube.com/embed/blMczZdIssQ" title="YouTube video player" frameborder="0" allow="accelometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</details>
 
 ## Fashion
 
