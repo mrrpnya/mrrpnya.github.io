@@ -8,7 +8,7 @@
 
 /* Glow effect on border, plus a slight response to hover by changing the border color near the cursor */
 .container {
-    @apply border-primary border-2 shadow-primary shadow-md;
+    @apply border-primary border-2 shadow-primary shadow-sm;
     transition: border-color 0.5s;
 }
 

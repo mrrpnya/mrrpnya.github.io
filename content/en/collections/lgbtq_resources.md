@@ -19,6 +19,8 @@ I will try not to provide medical advice, for I am not a doctor. Please consult 
 
 ::alert{type="info"}
 This article is a work in progress - You can submit an issue or pull request to contribute.
+Presently, it feels lacking in *transmasculine* and *non-binary* resources.
+You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/issues)
 ::
 
 If you find that this list is lacking or inaccurate, please open a GitHub issue or pull request.
@@ -43,6 +45,11 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
   - [Experiences of coming out and realization](#experiences-of-coming-out-and-realization)
   - [Voice Training](#voice-training)
   - [HRT Access](#hrt-access)
+  - [Fashion](#fashion)
+    - [General Resources](#general-resources)
+    - [Feminine](#feminine)
+    - [Masculine](#masculine)
+    - [Neutral/Other](#neutralother)
 
 ## Some FAQs
 
@@ -50,9 +57,11 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
 
 Nope. You don't need *any* dysphoria to be trans. If you want to be a gender? That's all you need.
 
+Just ask: Are you more comfortable living your life as a gender?
+
 ### Do I have to medically transition to be trans?
 
-No. You do not have to medically transition - The belief that you must transition is actually known as "gatekeeping" and is harmful - This specific gatekeeping is known as transmedicalism.
+No. You do not have to medically transition - The belief that you must transition is actually gatekeeping and is harmful - This specific gatekeeping is known as transmedicalism.
 
 ### Can I change course if I realize I'm something else?
 
@@ -132,6 +141,10 @@ By flashcards, I mean something short that can be rapidly shared to provide info
 > A Discord server for LGBTQ+, plural, therian, and so on individuals.
 > It tries to be a safe space for all, and has a variety of channels for different topics. Note though that the rules are strict.
 
+- [r/egg_irl](https://www.reddit.com/r/egg_irl/)
+
+> Memes about people questioning their gender.
+
 ## LGBTQ+ Stories
 
 ### Directly LGBTQ+ Stories
@@ -180,3 +193,40 @@ You may have heard some bigots claiming that it was mistranslation - No, it was 
 
 > A Google Maps map that shows informed consent HRT clinics in the US.
 > <iframe src="https://www.google.com/maps/d/embed?mid=1DxyOTw8dI8n96BHFF2JVUMK7bXsRKtzA&hl=en_US&ehbc=2E312F" width="400" height="350"></iframe>
+
+## Fashion
+
+Fashion resources can help with achieving one's desired presentation.
+
+::alert{type="note"}
+I don't know a lot about fashion - I will likely require assistance for a lot of this.
+::
+
+### General Resources
+
+- [Aesthetic Fandom Wiki's List of Aesthetics](https://aesthetics.fandom.com/wiki/List_of_Aesthetics)
+
+### Feminine
+
+::alert{type="info"}
+This needs more resources.
+You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/issues)
+::
+
+- *"The Definitive Feminine Clothing Guide"* by Nano_Nano
+> <iframe width="300" height="200" src="https://www.youtube.com/embed/_bBWVdCcfKo" title="YouTube video player" frameborder="0" allow="accelometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### Masculine
+
+::alert{type="info"}
+This needs more resources.
+You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/issues)
+::
+
+### Neutral/Other
+
+::alert{type="info"}
+This needs more resources.
+You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/issues)
+::

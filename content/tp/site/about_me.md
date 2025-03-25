@@ -40,4 +40,7 @@ Follow if you enjoy. I'm not *too* active, but I'll try to post some things ever
 
 <br> 
 
-mi pi kama sona. mi sitelen kepeken toki "C", "C++", en "C#" lon ilo. mi li kama sona e sitelen kepeken toki "Rust" lon ilo.
+mi pi kama sona. mi sitelen kepeken toki "C" en "C++" en "C#" lon ilo. mi kama sona e sitelen kepeken toki "Rust" lon ilo.
+mi lili utala kepeken jan ante
+
+sina kama toki tawa mi, mi lukin ala kama toki.
