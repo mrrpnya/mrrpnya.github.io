@@ -229,6 +229,7 @@ I don't know a lot about fashion - I will likely require assistance for a lot of
 ### General Resources
 
 - [Aesthetic Fandom Wiki's List of Aesthetics](https://aesthetics.fandom.com/wiki/List_of_Aesthetics)
+- [VampireFreaks](https://vampirefreaks.com/): Goth, emo and punk rock clothing store
 
 ### Feminine
 
