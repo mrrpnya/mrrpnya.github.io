@@ -46,6 +46,7 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
   - [Voice Training](#voice-training)
   - [HRT Access](#hrt-access)
   - [Political](#political)
+    - [Maps](#maps)
     - [Videos](#videos)
   - [Fashion](#fashion)
     - [General Resources](#general-resources)
@@ -210,6 +211,10 @@ The below content deals with political topics and may distress some audiences.
 ::
 
 <details>
+
+### Maps
+
+- [American Civil Liberties Union - Anti-Trans Bill Map](https://www.aclu.org/legislative-attacks-on-lgbtq-rights-2025)
 
 ### Videos
 
