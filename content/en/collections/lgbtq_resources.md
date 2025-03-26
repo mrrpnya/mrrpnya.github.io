@@ -20,6 +20,7 @@ I will try not to provide medical advice, for I am not a doctor. Please consult 
 ::alert{type="info"}
 This article is a work in progress - You can submit an issue or pull request to contribute.
 Presently, it feels lacking in *transmasculine* and *non-binary* resources.
+It also is lacking in articles regarding other identities on the LGBTQIA2S+ spectrum.
 You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/issues)
 ::
 
@@ -36,14 +37,21 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
     - [What is plurality/multiplicity?](#what-is-pluralitymultiplicity)
     - [What is a therian?](#what-is-a-therian)
   - [LGBTQ+ Knowledge bases and Other Resource Lists](#lgbtq-knowledge-bases-and-other-resource-lists)
+    - [Wikis](#wikis)
+    - [General Knowledge/Explanation](#general-knowledgeexplanation)
+    - [Knowledge on Identifying and Combating Disinformation/Hatred](#knowledge-on-identifying-and-combating-disinformationhatred)
   - [LGBTQ+ Flashcards](#lgbtq-flashcards)
   - [LGBTQ+ Content Creators and Artists](#lgbtq-content-creators-and-artists)
   - [LGBTQ+ Communities](#lgbtq-communities)
+    - [Worldwide/Virtual](#worldwidevirtual)
   - [LGBTQ+ Stories](#lgbtq-stories)
     - [Directly LGBTQ+ Stories](#directly-lgbtq-stories)
     - [Indirectly LGBTQ+ Stories/Resonant](#indirectly-lgbtq-storiesresonant)
   - [Experiences of coming out and realization](#experiences-of-coming-out-and-realization)
+  - [General Maps](#general-maps)
   - [Voice Training](#voice-training)
+    - [Tools](#tools)
+    - [Guides](#guides)
   - [HRT Access](#hrt-access)
   - [Political](#political)
     - [Maps](#maps)
@@ -53,6 +61,7 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
     - [Feminine](#feminine)
     - [Masculine](#masculine)
     - [Neutral/Other](#neutralother)
+  - [Science](#science)
 
 ## Some FAQs
 
@@ -88,10 +97,20 @@ I think I'll need to research more on this topic before I can provide that much 
 
 ## LGBTQ+ Knowledge bases and Other Resource Lists
 
+### Wikis
+
 - [LGBTQ+ Wiki](https://lgbt.wikia.org/)
 - [Pluralpedia](https://pluralpedia.org/)
+
+### General Knowledge/Explanation
+
 - [The Gender Dysphoria Bible](https://genderdysphoria.fyi/) (aka That's Gender Dysphoria, FYI)
 - [GLAAD LGBTQ Resource List](https://glaad.org/resourcelist/)
+- [awesome-transgender](https://github.com/cvyl/awesome-transgender)
+
+### Knowledge on Identifying and Combating Disinformation/Hatred
+
+- [Beth's Anti-Transphobia Library](https://bethylamine.github.io/) (It's a bit unfinished it seems, as of March '25)
 
 ## LGBTQ+ Flashcards
 
@@ -133,7 +152,13 @@ By flashcards, I mean something short that can be rapidly shared to provide info
 > Brooke is a trans woman and uses she/her pronouns.
 > <img src="https://preview.redd.it/dont-wear-it-out-or-do-lol-v0-f5tmtdnzht5b1.png?width=1080&crop=smart&auto=webp&s=523de1592bfa419890ac9e4d6f6b56b39f3fb369" width="300" height="200" alt="Brooke is her name!"></img>
 
+- [Alice Lunazera](https://www.youtube.com/@Lunazera)
+
+> A transfeminine streamer and VTuber, often makes queer content.
+
 ## LGBTQ+ Communities
+
+### Worldwide/Virtual
 
 - [Trans Academy 501c3](https://www.transacademy.org/)
 
@@ -186,7 +211,17 @@ You may have heard some bigots claiming that it was mistranslation - No, it was 
 
 > <iframe width="300" height="200" src="https://www.youtube.com/embed/qF1DTK4U1AM" title="YouTube video player" frameborder="0" allow="accelometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## General Maps
+
+- [QUEERING THE MAP](https://www.queeringthemap.com/) Records LGBTQIA+ experiences and puts them on a map of the world.
+
 ## Voice Training
+
+### Tools
+
+- [Acoustic Gender](https://acousticgender.space/) - A web app for visualizing voice training
+
+### Guides
 
 - [FairyPrincessLucy](https://www.youtube.com/@fairyprincesslucy)
 
@@ -260,3 +295,12 @@ You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/
 This needs more resources.
 You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/issues)
 ::
+
+## Science
+
+::alert{type="info"}
+This *really* needs more resources - especially regarding other identities.
+You can submit some in an [Issue.](https://github.com/mrrpnya/mrrpnya.github.io/issues)
+::
+
+- [Transfeminine Science](https://transfemscience.org/)
