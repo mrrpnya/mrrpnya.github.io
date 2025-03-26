@@ -40,12 +40,12 @@ h6 {
 }
 
 a {
-    @apply transition text-purple-400 hover:text-purple-600;
+    @apply transition text-purple-400 hover:text-purple-300;
 }
 
 
 blockquote {
-    @apply border-l-4 border-purple-400 pl-2;
+    @apply border-l-2 border-purple-400 px-2 pl-4;
     container: block;
 }
 

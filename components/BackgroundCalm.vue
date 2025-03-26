@@ -9,22 +9,7 @@
                         enable: true,
                         zIndex: -10
                     },
-                    fpsLimit: 40,
-                    interactivity: {
-                        detect_on: 'window',
-                        events: {
-                            onHover: {
-                                enable: true,
-                                mode: 'repulse'
-                            },
-                        },
-                        modes: {
-                            repulse: {
-                                distance: 100,
-                                duration: 1.0
-                            }
-                        }
-                    },
+                    fpsLimit: 30,
                     particles: {
                         zIndex: 0,
                         color: {
@@ -42,7 +27,7 @@
                             enable: true,
                             outModes: 'bounce',
                             random: false,
-                            speed: 1.5,
+                            speed: 0.5,
                             straight: false
                         },
                         number: {

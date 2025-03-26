@@ -17,10 +17,11 @@ tags: ['awesome', 'curated']
 
 Inspired by [Awesome](https://github.com/sindresorhus/awesome), this is a dumping ground of stuff of interest.
 
-> [!info]
-> This is going to be long, and will probably be getting a lot of updates.
-> I intend to just keep adding to this.
-> This is meant to be kind of a miscellaneous collection of stuff - For more specific things, see other collections.
+::alert{type="note"}
+This is going to be long, and will probably be getting a lot of updates.
+I intend to just keep adding to this.
+This is meant to be kind of a miscellaneous collection of stuff - For more specific things, see other collections.
+::
 
 ## Table of Contents
 
@@ -155,9 +156,10 @@ Hammer and all the tools are included with the game, so you can make maps, mods,
 
 ### Shows
 
-> [!note]
+::alert{type="note"}
 > It seems Hasbro has started dumping older/discontinued shows onto YouTube for free viewing. I'm not sure if it's region-locked, but it's worth a shot, and I'll be linking to those where possible.
 > And it's usually the ENTIRE series, so... have fun with that.
+::
 
 - [One Piece](https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece)
 
@@ -272,17 +274,18 @@ I'm sure the feds have an eye on him with what he casually builds.
 
 ### Political Content
 
-> [!warning]
-> If you're not into politics, [you might want to skip this section.](#artists)
-> Also, if you start getting *angry at* this section, you might want to take a step back and think about why you're getting angry.
-> Unfold the Details to see the content.
+::alert{type="warning"}
+If you're not into politics, [you might want to skip this section.](#artists)
+Also, if you start getting *angry at* this section, you might want to take a step back and think about why you're getting angry.
+Unfold the Details to see the content.
+::
 
 <details>
 
-> [!note]
-> I'm strongly left-leaning, so most of these are going to be left-leaning.
-> Trumpism is Nazism in denial. Compare their ideologies, behaviors, rhetoric, and actions.
-
+::alert{type="note"}
+I'm strongly left-leaning, so most of these are going to be left-leaning.
+Trumpism is Nazism in denial. Compare their ideologies, behaviors, rhetoric, and actions.
+::
 - [Countdown with Keith Olbermann](https://www.youtube.com/@KeithOlbermann)
 <!-- ...Is a production by iHeartRadio. -->
 > Keith Olbermann is a political commentator who has been in the business for a long time. He's a great commentary for information on current events, and he's not afraid to call out people who are doing wrong.

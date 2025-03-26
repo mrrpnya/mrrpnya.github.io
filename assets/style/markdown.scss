@@ -2,8 +2,14 @@
 /* Note: Use `md-override` to override the default markdown styling */
 
 /* Headers (1-3) get a small visual upgrade */
-.md-contents h1:not(.md-override), .md-contents h2:not(.md-override), .md-contents h3:not(.md-override) {
-    @apply border-highlight border-b-2;
+.md-contents h1:not(.md-override), .md-contents h2:not(.md-override) {
+    @apply border-purple-700 border-b;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.md-contents h3:not(.md-override) {
     padding-bottom: 0.25rem;
     margin-bottom: 0.5rem;
     margin-top: 1rem;

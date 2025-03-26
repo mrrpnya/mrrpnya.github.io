@@ -83,7 +83,6 @@ Yes. You can change course if you realize you're something else (or perhaps cis 
 
 Plural is a term used to describe systems of multiple people in one body, put simply.
 While they *might* not be LGBTQ+ by default, they are often included in LGBTQ+ spaces due to the discrimination they face. It is important to respect their identities and pronouns.
-I also include information on plurality in this list because it is important to understand and respect plural systems.
 
 If you've watched Yu Yu Hakusho, think of Sensui and his multiple personalities.
 
