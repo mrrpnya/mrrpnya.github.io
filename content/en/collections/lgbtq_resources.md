@@ -38,6 +38,7 @@ If you find that this list is lacking or inaccurate, please open a GitHub issue 
     - [What is a therian?](#what-is-a-therian)
   - [LGBTQ+ Knowledge bases and Other Resource Lists](#lgbtq-knowledge-bases-and-other-resource-lists)
     - [Wikis](#wikis)
+    - [Guidebooks](#guidebooks)
     - [General Knowledge/Explanation](#general-knowledgeexplanation)
     - [Knowledge on Identifying and Combating Disinformation/Hatred](#knowledge-on-identifying-and-combating-disinformationhatred)
   - [LGBTQ+ Flashcards](#lgbtq-flashcards)
@@ -100,6 +101,10 @@ I think I'll need to research more on this topic before I can provide that much 
 
 - [LGBTQ+ Wiki](https://lgbt.wikia.org/)
 - [Pluralpedia](https://pluralpedia.org/)
+
+### Guidebooks
+
+- [The Trevor Project's Coming-Out Handbook](https://www.thetrevorproject.org/resources/guide/the-coming-out-handbook/)
 
 ### General Knowledge/Explanation
 
